@@ -91,7 +91,7 @@ const projects: ProjectCard[] = [
     type: "Residential",
     gridType: "Hybrid",
     previous: "Generator",
-    image: "/images/solar-panels.avif",
+    image: "/images/projects/pv.avif",
     location: "Karen, Nairobi"
   },
   {
@@ -100,7 +100,7 @@ const projects: ProjectCard[] = [
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
-    image: "/images/stima-kit.avif",
+    image: "/images/projects/mrss.avif",
     location: "Runda, Nairobi"
   },
   {
@@ -109,7 +109,7 @@ const projects: ProjectCard[] = [
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
-    image: "/images/residential-solutions.avif",
+    image: "/images/projects/hw.avif",
     location: "Kitisuru, Nairobi"
   },
   {
@@ -118,7 +118,7 @@ const projects: ProjectCard[] = [
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
-    image: "/images/solar-panels.avif",
+    image: "/images/projects/fv.avif",
     location: "Muthaiga, Nairobi"
   },
   {
@@ -127,7 +127,7 @@ const projects: ProjectCard[] = [
     type: "Residential (School)",
     gridType: "Hybrid",
     previous: "KPLC",
-    image: "/images/stima-kit.avif",
+    image: "/images/projects/gr.avif",
     location: "Lavington, Nairobi"
   }
 ];

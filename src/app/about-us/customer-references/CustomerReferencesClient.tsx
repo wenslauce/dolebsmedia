@@ -150,7 +150,7 @@ export default function CustomerReferencesClient({ projects, keyFeatures }: Cust
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Collective Experience In The Solar PV Space
+            Our Impact in Numbers
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -158,7 +158,7 @@ export default function CustomerReferencesClient({ projects, keyFeatures }: Cust
               { value: "300+", label: "Projects Completed" },
               { value: "75%", label: "Average Energy Savings" },
               { value: "100K+", label: "Tons CO₂ Saved" },
-              { value: "50+", label: "Collective Experience In The Solar PV Space" }
+              { value: "50+", label: "Years of Excellence" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

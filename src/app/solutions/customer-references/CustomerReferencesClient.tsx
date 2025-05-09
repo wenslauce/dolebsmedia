@@ -150,7 +150,7 @@ export default function CustomerReferencesClient({ projects, keyFeatures }: Cust
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Collective Experience In The Solar PV Space
+            Our Impact in Numbers
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
