@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide default scrollbar and add custom styling */
+@layer base {
+  html {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/ibmplexsans.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('/fonts/ibmplexsanscondensed.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    /* Main color: #006939 (HSL: 152 100% 21%) */
+    --primary: 152 100% 21%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary color: Black #000000 */
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent color: #ffcf62 (HSL: 42 100% 69%) */
+    --accent: 42 100% 69%;
+    --accent-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 50%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 152 100% 21%;
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    
+    /* Main color: #006939 (HSL: 152 100% 21%) */
+    --primary: 152 100% 21%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary color: White in dark mode */
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
+    
+    /* Accent color: #ffcf62 (HSL: 42 100% 69%) */
+    --accent: 42 100% 69%;
+    --accent-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 152 100% 21%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-background text-foreground font-metropolis;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply w-full max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-wrapper {
+    @apply w-full overflow-hidden;
+  }
+
+  /* Enhanced button styles with animations */
+  .btn-primary {
+    @apply relative bg-primary text-white py-2 px-6 rounded-md font-medium 
+           overflow-hidden transition-all duration-300 shadow-md
+           hover:shadow-lg hover:bg-primary/90 hover:translate-y-[-2px]
+           active:translate-y-[1px] active:shadow-sm
+           before:absolute before:inset-0 before:bg-white/20
+           before:translate-x-[-100%] before:hover:translate-x-[100%]
+           before:transition-transform before:duration-500 before:ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply relative bg-secondary text-white py-2 px-6 rounded-md font-medium 
+           overflow-hidden transition-all duration-300 shadow-md
+           hover:shadow-lg hover:bg-secondary/90 hover:translate-y-[-2px]
+           active:translate-y-[1px] active:shadow-sm
+           before:absolute before:inset-0 before:bg-white/10
+           before:translate-x-[-100%] before:hover:translate-x-[100%]
+           before:transition-transform before:duration-500 before:ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply relative bg-accent text-secondary py-2 px-6 rounded-md font-medium 
+           overflow-hidden transition-all duration-300 shadow-md
+           hover:shadow-lg hover:bg-accent/90 hover:translate-y-[-2px]
+           active:translate-y-[1px] active:shadow-sm
+           before:absolute before:inset-0 before:bg-white/20
+           before:translate-x-[-100%] before:hover:translate-x-[100%]
+           before:transition-transform before:duration-500 before:ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply relative border-2 border-primary text-primary py-2 px-6 rounded-md font-medium 
+           overflow-hidden transition-all duration-300 bg-transparent
+           hover:shadow-md hover:bg-primary/10 hover:translate-y-[-2px]
+           active:translate-y-[1px] active:shadow-sm
+           before:absolute before:inset-0 before:bg-primary/5
+           before:translate-x-[-100%] before:hover:translate-x-[100%]
+           before:transition-transform before:duration-500 before:ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply relative text-primary py-2 px-6 rounded-md font-medium 
+           overflow-hidden transition-all duration-300 
+           hover:bg-primary/5 hover:translate-y-[-2px]
+           active:translate-y-[1px]
+           focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .heading-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-tight;
+  }
+
+  .heading-sm {
+    @apply text-lg md:text-xl font-semibold leading-tight;
+  }
+}
+
+/* Add custom animations */
+@layer utilities {
+  .animate-shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full 
+           before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r 
+           before:from-transparent before:via-white/10 before:to-transparent;
+  }
+
+  /* Gold shimmer effect for accent buttons */
+  .animate-gold-shimmer {
+    @apply relative overflow-hidden after:absolute after:inset-0 after:translate-x-[-100%]
+           after:animate-[goldShimmer_2s_ease-in-out_infinite] after:bg-gradient-to-r 
+           after:from-transparent after:via-white/30 after:to-transparent;
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes goldShimmer {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
+
+  /* Button glow effects */
+  .accent-glow {
+    box-shadow: 0 0 15px rgba(255, 207, 98, 0.4);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .accent-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 207, 98, 0.6), 0 0 40px rgba(255, 207, 98, 0.3);
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
+  /* Animation pause on hover */
+  .animation-play-state-paused {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+}
