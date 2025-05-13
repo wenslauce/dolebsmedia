@@ -250,9 +250,9 @@ export default function CommercialSolutionsPage() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Sun className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Solar Integration</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Solar for commercial facilities</h3>
                 <p className="text-gray-700">
-                  High-performance solar installations for significant energy cost reduction and sustainability.
+                  From on-grid solar systems, hybrid, off-grid, and fuel-saving solar systems. We have experience in East Africa in deploying complex solar systems.
                 </p>
               </div>
 
@@ -260,19 +260,39 @@ export default function CommercialSolutionsPage() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Battery className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Energy Storage</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Battery Energy Storage</h3>
                 <p className="text-gray-700">
-                  Advanced supercapacitor storage solutions for uninterrupted power supply and peak load management.
+                  W. Giertsen Energy is an expert in integrating battery storage in commercial facilities for hybrid and off-grid/diesel solar systems. We are most loved by our clients with supercapacitor battery systems.
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Wrench className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Specialized Applications</h3>
+                <p className="text-gray-700">
+                  Need solar for specific uses like cold storage or water pumps? We not only design custom solar systems to meet these needs, we also supply the cold storage units and water pumps themselves.
+                </p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <BarChart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Smart Management</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Online smart monitoring</h3>
                 <p className="text-gray-700">
-                  Intelligent monitoring and control systems for optimal energy utilization and cost savings.
+                  Simple, user-friendly platforms that let you track and measure your solar power usage in real time.
+                </p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <LineChart className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Financial Optimization</h3>
+                <p className="text-gray-700">
+                  Reduce the burden of high upfront costs with our flexible project financing options.
                 </p>
               </div>
             </div>

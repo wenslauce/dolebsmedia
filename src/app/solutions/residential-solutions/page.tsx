@@ -110,8 +110,8 @@ export default function ResidentialSolutionsPage() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary">100%</h3>
-                  <p className="text-gray-600">Warranty Protection</p>
+                  <h3 className="text-2xl font-bold text-secondary">Fastest Installation</h3>
+                  <p className="text-gray-600">Nairobi Warehouse Advantage</p>
                 </div>
               </div>
             </div>
