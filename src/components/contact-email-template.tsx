@@ -29,7 +29,7 @@ export const ContactEmailTemplate = ({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src="https://system.wenslauce.com/wp-content/uploads/2025/02/WGES-KE-NOR.png"
+              src="https://system.wenslauce.com/wp-content/uploads/2025/02/W. Giertsen Energy Solutions-KE-NOR.png"
               width="400"
               height="120"
               alt="W. Giertsen Energy Solutions Logo"

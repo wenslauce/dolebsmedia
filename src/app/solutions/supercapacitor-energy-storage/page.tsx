@@ -95,7 +95,7 @@ export default function SupercapacitorEnergyStoragePage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.6 }}
                 >
-                  At WGES, we believe in pushing the boundaries of energy storage technology. Our graphene supercapacitors are engineered for unmatched reliability, efficiency, and sustainability—ensuring power is always available, even in the most demanding environments.
+                  At W. Giertsen Energy Solutions, we believe in pushing the boundaries of energy storage technology. Our graphene supercapacitors are engineered for unmatched reliability, efficiency, and sustainability—ensuring power is always available, even in the most demanding environments.
                 </motion.p>
                 
                 <motion.div
@@ -189,7 +189,7 @@ export default function SupercapacitorEnergyStoragePage() {
                   Revolutionary Energy Storage for a Reliable Future
                 </h2>
                 <p className="text-gray-700 text-lg mb-8">
-                  At WGES, we believe in pushing the boundaries of energy storage technology. Our graphene supercapacitors are engineered for unmatched reliability, efficiency, and sustainability—ensuring power is always available, even in the most demanding environments.
+                  At W. Giertsen Energy Solutions, we believe in pushing the boundaries of energy storage technology. Our graphene supercapacitors are engineered for unmatched reliability, efficiency, and sustainability—ensuring power is always available, even in the most demanding environments.
                 </p>
               
               <div className="space-y-5 mb-8">
@@ -606,7 +606,7 @@ export default function SupercapacitorEnergyStoragePage() {
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Feature</th>
-                    <th className="px-6 py-4 text-left text-sm font-medium text-primary">WGES Supercapacitors</th>
+                    <th className="px-6 py-4 text-left text-sm font-medium text-primary">W. Giertsen Energy Solutions Supercapacitors</th>
                     <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Lithium Batteries</th>
                   </tr>
                 </thead>

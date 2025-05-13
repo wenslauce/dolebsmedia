@@ -5,7 +5,7 @@ import Link from "next/link";
 import TalentPoolFormModal from "@/components/TalentPoolFormModal";
 
 export const metadata = {
-  title: "Career at WGES | Join Our Team",
+  title: "Career at W. Giertsen Energy Solutions | Join Our Team",
   description: "Join W. Giertsen Energy Solutions and help shape the future of sustainable energy. Explore our career opportunities and job openings.",
 };
 
@@ -55,7 +55,7 @@ export default function CareerPage() {
         <div className="relative h-[400px]">
           <Image
             src="/images/careers-hero.avif"
-            alt="Careers at WGES"
+            alt="Careers at W. Giertsen Energy Solutions"
             fill
             className="object-cover"
           />
@@ -77,7 +77,7 @@ export default function CareerPage() {
         <div className="container-custom py-16">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6">
-              Why Join WGES?
+              Why Join W. Giertsen Energy Solutions?
             </h2>
             <p className="text-gray-700">
               Be part of a team that's driving the transition to sustainable energy.

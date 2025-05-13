@@ -55,7 +55,7 @@ export default function AboutUsClient({
       <div className="relative h-[600px]">
         <Image
           src="/images/about-hero.avif"
-          alt="About WGES"
+          alt="About W. Giertsen Energy Solutions"
           fill
           className="object-cover"
           priority

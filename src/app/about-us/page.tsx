@@ -5,7 +5,7 @@ import Link from "next/link";
 import AboutUsClient from "./AboutUsClient";
 
 export const metadata = {
-  title: "About WGES | Your Energy Solutions Partner Since 1875",
+  title: "About W. Giertsen Energy Solutions | Your Energy Solutions Partner Since 1875",
   description: "Learn about W. Giertsen Energy Solutions' history, mission, values, and expertise as your reliable lifecycle partner for solar-based applications in demanding environments for over 150 years.",
 };
 

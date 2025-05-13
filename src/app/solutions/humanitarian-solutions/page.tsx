@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Humanitarian Energy Solutions | WGES",
+  title: "Humanitarian Energy Solutions | W. Giertsen Energy Solutions",
   description: "Reliable solar solutions for humanitarian operations worldwide. Powering refugee camps, health clinics, and emergency coordination hubs with sustainable energy.",
 };
 

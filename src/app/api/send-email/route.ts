@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
     // Send email to company
     try {
       const { data, error } = await resend.emails.send({
-        from: "WGES Solar Survey <onboarding@resend.dev>",
+        from: "W. Giertsen Energy Solutions Solar Survey <onboarding@resend.dev>",
         to: [companyEmail],
         subject: "New Solar Solution Survey Submission",
         react: SurveyEmailTemplate({

@@ -6,7 +6,7 @@ import MapEmbed from "./MapEmbed";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
-  title: "Contact WGES | Get in Touch",
+  title: "Contact W. Giertsen Energy Solutions | Get in Touch",
   description: "Contact W. Giertsen Energy Solutions for sustainable energy solutions. Reach out to our team of experts for consultation and support.",
 };
 

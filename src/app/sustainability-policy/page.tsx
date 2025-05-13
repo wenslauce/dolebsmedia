@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FileText, Leaf, Globe, Lightbulb, Recycle, Clock, Building, Users, ShieldCheck, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Sustainability Policy | WGES",
+  title: "Sustainability Policy | W. Giertsen Energy Solutions",
   description: "W. Giertsen Energy Solutions commitment to environmental sustainability and responsible business practices.",
 };
 

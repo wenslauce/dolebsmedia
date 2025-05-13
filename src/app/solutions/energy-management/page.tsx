@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Smart Energy Management | WGES",
-  description: "Optimize your energy consumption with intelligent management solutions. Reduce costs and increase efficiency with WGES's smart energy management systems.",
+  title: "Smart Energy Management | W. Giertsen Energy Solutions",
+  description: "Optimize your energy consumption with intelligent management solutions. Reduce costs and increase efficiency with W. Giertsen Energy Solutions's smart energy management systems.",
 };
 
 export default function EnergyManagementPage() {

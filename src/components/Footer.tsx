@@ -33,7 +33,7 @@ export function Footer() {
   const socialLinks = [
     { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/company/w-giertsen-energy-solutions-as", label: "LinkedIn" },
     { icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/wgiertsenenergy/", label: "Instagram" },
-    { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/WGESGiertsen/", label: "Facebook" }
+    { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/W. Giertsen Energy SolutionsGiertsen/", label: "Facebook" }
   ];
 
   const fadeInUpVariants = {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FileText, Cookie, Bell, Settings, Info, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Cookie Policy | WGES",
+  title: "Cookie Policy | W. Giertsen Energy Solutions",
   description: "Information about how W. Giertsen Energy Solutions uses cookies on our website.",
 };
 

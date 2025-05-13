@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Energy Solutions | WGES",
-  description: "From solar installations to smart energy management and operations, find tailored solutions with WGES.",
+  title: "Energy Solutions | W. Giertsen Energy Solutions",
+  description: "From solar installations to smart energy management and operations, find tailored solutions with W. Giertsen Energy Solutions.",
 };
 
 interface SolutionCardProps {
@@ -123,7 +123,7 @@ export default function SolutionsPage() {
               Comprehensive Energy Solutions
             </h2>
             <p className="text-gray-700">
-              At WGES, we offer a complete range of energy solutions designed to meet the diverse
+              At W. Giertsen Energy Solutions, we offer a complete range of energy solutions designed to meet the diverse
               needs of businesses and homeowners. From cutting-edge storage technologies to comprehensive
               maintenance services, our solutions are tailored to maximize efficiency, reduce costs,
               and promote sustainability.

@@ -22,8 +22,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Residential Energy Solutions | WGES",
-  description: "Power your home with StimaKit - The complete residential energy solution from WGES. Reliable, clean energy with uninterrupted power supply and smart monitoring.",
+  title: "Residential Energy Solutions | W. Giertsen Energy Solutions",
+  description: "Power your home with StimaKit - The complete residential energy solution from W. Giertsen Energy Solutions. Reliable, clean energy with uninterrupted power supply and smart monitoring.",
 };
 
 export default function ResidentialSolutionsPage() {

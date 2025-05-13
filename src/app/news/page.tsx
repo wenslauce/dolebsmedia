@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Energy Industry News & Updates | WGES",
-  description: "Stay informed about the latest developments in sustainable energy, industry trends, and WGES's project updates.",
+  title: "Energy Industry News & Updates | W. Giertsen Energy Solutions",
+  description: "Stay informed about the latest developments in sustainable energy, industry trends, and W. Giertsen Energy Solutions's project updates.",
 };
 
 interface NewsArticle {
@@ -20,7 +20,7 @@ interface NewsArticle {
 const newsArticles: NewsArticle[] = [
   {
     id: 1,
-    title: "WGES Completes Largest Commercial Solar Installation in Region",
+    title: "W. Giertsen Energy Solutions Completes Largest Commercial Solar Installation in Region",
     excerpt: "A new milestone achieved with the completion of a 2.5 MWp solar installation for a leading manufacturing facility.",
     date: "2024-03-15",
     image: "/images/news-solar.avif",

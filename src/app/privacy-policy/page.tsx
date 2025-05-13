@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Shield, Lock, Eye, FileText, Users, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | WGES",
+  title: "Privacy Policy | W. Giertsen Energy Solutions",
   description: "Learn how W. Giertsen Energy Solutions collects, uses, and protects your personal information.",
 };
 

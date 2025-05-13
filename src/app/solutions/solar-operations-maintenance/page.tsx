@@ -5,7 +5,7 @@ import Link from "next/link";
 import SolarOMClient from "./SolarOMClient";
 
 export const metadata = {
-  title: "Expert Solar Operations & Maintenance | WGES",
+  title: "Expert Solar Operations & Maintenance | W. Giertsen Energy Solutions",
   description: "Maximize your solar investment with our team of certified engineers and energy auditors. Professional monitoring, maintenance, and optimization services for your solar systems.",
 };
 

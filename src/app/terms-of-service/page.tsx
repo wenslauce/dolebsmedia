@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FileText, Scale, Globe, AlertTriangle, Award, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Service | WGES",
+  title: "Terms of Service | W. Giertsen Energy Solutions",
   description: "Terms and conditions for using W. Giertsen Energy Solutions services and website.",
 };
 
