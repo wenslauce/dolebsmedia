@@ -83,7 +83,7 @@ export default function SolutionsPage() {
     },
     {
       title: "Operations & Maintenance",
-      description: "Expert solar maintenance services provided by our team of certified solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
+      description: "Expert solar maintenance services provided by our team of licensed solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
       href: "/solutions/solar-operations-maintenance",
       imageSrc: "/images/operations.avif"
     }

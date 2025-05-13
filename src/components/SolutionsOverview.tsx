@@ -170,7 +170,7 @@ const SolutionsOverview = () => {
       imageSrc: "/images/operations.avif",
       title: "Operations & Maintenance",
       href: "/solutions/solar-operations-maintenance",
-      description: "Expert solar maintenance services provided by our team of certified solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
+      description: "Expert solar maintenance services provided by our team of  solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
       icon: <WrenchIcon size={20} />
     }
   ];

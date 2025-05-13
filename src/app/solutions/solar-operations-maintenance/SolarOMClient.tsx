@@ -54,7 +54,7 @@ export default function SolarOMClient({ keyFeatures, services, expertiseHighligh
                 Expert Solar Operations & Maintenance
               </h1>
               <p className="text-white/90 text-lg mb-8">
-                Maximize Your Solar Investment with Our Certified Solar Technicians
+                Maximize Your Solar Investment with Our Licensed Solar Technicians
               </p>
               <Link
                 href="/consultation"
