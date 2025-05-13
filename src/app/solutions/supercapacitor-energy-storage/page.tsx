@@ -198,8 +198,8 @@ export default function SupercapacitorEnergyStoragePage() {
                     <CheckCircle className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-secondary">Pioneering Technology</h3>
-                    <p className="text-gray-600">Our proprietary graphene technology represents the cutting edge of energy storage innovation.</p>
+                    <h3 className="text-lg font-medium text-secondary">Advanced Technology</h3>
+                    <p className="text-gray-600">Our advanced supercapacitor technology delivers reliable energy storage with superior cycling performance.</p>
                   </div>
                 </div>
                 
@@ -208,8 +208,8 @@ export default function SupercapacitorEnergyStoragePage() {
                     <CheckCircle className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-secondary">German Engineering</h3>
-                    <p className="text-gray-600">Designed and manufactured with precision German engineering for ultimate reliability.</p>
+                    <h3 className="text-lg font-medium text-secondary">Quality Manufacturing</h3>
+                    <p className="text-gray-600">Manufactured with precision in our state-of-the-art Chinese facilities to ensure consistent quality and dependability.</p>
                   </div>
                 </div>
                 
@@ -219,7 +219,7 @@ export default function SupercapacitorEnergyStoragePage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-secondary">Sustainability Focus</h3>
-                    <p className="text-gray-600">We're committed to creating energy solutions that are as good for the planet as they are for your power needs.</p>
+                    <p className="text-gray-600">We're committed to creating energy solutions that reduce environmental impact while meeting your power needs efficiently.</p>
                   </div>
                 </div>
               </div>
@@ -491,12 +491,7 @@ export default function SupercapacitorEnergyStoragePage() {
                   Unmatched Performance & Efficiency
                 </h3>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
-                      <Battery className="h-3 w-3 text-primary" />
-                    </div>
-                    <span>High Efficiency – Super-fast charging with ultra-high energy transfer efficiency</span>
-                  </li>
+
                   <li className="flex items-start gap-3">
                     <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
                       <Zap className="h-3 w-3 text-primary" />
@@ -507,7 +502,7 @@ export default function SupercapacitorEnergyStoragePage() {
                     <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
                       <Battery className="h-3 w-3 text-primary" />
                     </div>
-                    <span>100% Depth of Discharge (DoD) – Utilizes full battery capacity without degradation</span>
+                    <span>90% Recommended Depth of Discharge (DoD) – Utilizes full battery capacity without degradation</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
@@ -560,12 +555,7 @@ export default function SupercapacitorEnergyStoragePage() {
                     </div>
                     <span>Performs in Extreme Temperatures – From -40°C to 65°C, ideal for harsh environments</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <div className="min-w-5 h-5 rounded-full bg-primary-green/10 flex-shrink-0 flex items-center justify-center mt-1">
-                      <Shield className="h-3 w-3 text-primary-green" />
-                    </div>
-                    <span>High Safety Standards – Resistant to overcharging, overheating, and electrical failures</span>
-                  </li>
+
                 </ul>
               </div>
             </motion.div>
@@ -587,12 +577,7 @@ export default function SupercapacitorEnergyStoragePage() {
                   Low Maintenance & Smart Control
                 </h3>
                 <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="min-w-5 h-5 rounded-full bg-accent-gold/10 flex-shrink-0 flex items-center justify-center mt-1">
-                      <Wrench className="h-3 w-3 text-accent-gold" />
-                    </div>
-                    <span>No Maintenance Required – Runs independently with self-regulating technology</span>
-                  </li>
+
                   <li className="flex items-start gap-3">
                     <div className="min-w-5 h-5 rounded-full bg-accent-gold/10 flex-shrink-0 flex items-center justify-center mt-1">
                       <Settings className="h-3 w-3 text-accent-gold" />
