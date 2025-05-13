@@ -328,12 +328,7 @@ export default function SupercapacitorEnergyStoragePage() {
                     </div>
                     <span>Solar energy storage systems</span>
                   </li>
-                        <li className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
-                      <div className="w-2 h-2 rounded-full bg-primary"></div>
-                    </div>
-                    <span>Rural mini-grids and off-grid power solutions</span>
-                  </li>
+
                         <li className="flex items-start gap-3">
                           <div className="w-5 h-5 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
                             <div className="w-2 h-2 rounded-full bg-primary"></div>
@@ -391,7 +386,7 @@ export default function SupercapacitorEnergyStoragePage() {
                           <div className="w-5 h-5 rounded-full bg-primary-green/20 flex-shrink-0 flex items-center justify-center mt-1">
                             <div className="w-2 h-2 rounded-full bg-primary-green"></div>
                           </div>
-                          <span>Hospitals, banks, and data centers</span>
+                          <span>Hospitals, banks,data centers and factories</span>
                         </li>
                       </ul>
                     </div>
@@ -435,11 +430,7 @@ export default function SupercapacitorEnergyStoragePage() {
                       <p className="text-gray-600 text-sm">20,000+ charge cycles compared to 500-3,000 for traditional batteries</p>
                     </div>
                     
-                    <div className="p-6 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col items-center text-center">
-                      <Zap className="h-8 w-8 text-primary-green mb-4" />
-                      <h4 className="text-lg font-medium text-secondary mb-2">Rapid Charging</h4>
-                      <p className="text-gray-600 text-sm">Minutes instead of hours, with high power density for quick energy discharge</p>
-                    </div>
+
                     
                     <div className="p-6 flex flex-col items-center text-center">
                       <Leaf className="h-8 w-8 text-accent-gold mb-4" />
