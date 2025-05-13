@@ -139,7 +139,7 @@ export default function CommercialSolutionsPage() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                 <Search className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-secondary mb-4">Energy Audit</h3>
+              <h3 className="text-xl font-semibold text-secondary mb-4">Energy Assessment</h3>
               <p className="text-gray-700 mb-4">
                 For businesses looking to reduce electricity bills while staying connected to the grid.
               </p>
@@ -174,7 +174,7 @@ export default function CommercialSolutionsPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-600">Supercapacitor integration</span>
+                  <span className="text-gray-600">Energy Storage integration</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -189,7 +189,7 @@ export default function CommercialSolutionsPage() {
               </div>
               <h3 className="text-xl font-semibold text-secondary mb-4">Installation</h3>
               <p className="text-gray-700 mb-4">
-                For businesses operating in remote areas with no grid access.
+              Expert installation services for homes and businesses anywhere - from urban centers to remote off-grid locations
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">

@@ -110,8 +110,8 @@ export default function ResidentialSolutionsPage() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary">5 Years</h3>
-                  <p className="text-gray-600">Warranty Coverage</p>
+                  <h3 className="text-2xl font-bold text-secondary">100%</h3>
+                  <p className="text-gray-600">Warranty Protection</p>
                 </div>
               </div>
             </div>
@@ -123,42 +123,25 @@ export default function ResidentialSolutionsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold text-secondary mb-6">
-                Introducing StimaKit
+                Get Your StimaKit Today
               </h2>
-              <p className="text-gray-700 text-lg mb-6">
-                Designed with cutting-edge technology, StimaKit provides uninterrupted power supply, ensuring your home remains powered at all times. Whether on-grid or off-grid, our solar and energy storage solutions guarantee maximum efficiency, reliability, and affordability.
-              </p>
-              <p className="text-gray-700 text-lg mb-8">
-                With StimaKit, we are redefining home energy solutions by providing a reliable, efficient, and sustainable way for homeowners to achieve energy independence. No more blackouts, no more skyrocketing electricity bills—just clean, uninterrupted power when you need it.
-              </p>
-              <div className="space-y-6">
+              <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
-                    <Sun className="h-5 w-5 text-primary" />
+                    <Settings className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-secondary">Tailored Solutions</h3>
                     <p className="text-gray-600">Customized StimaKit configurations based on your home's unique energy consumption patterns.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
-                    <Battery className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-secondary">Uninterrupted Power</h3>
-                    <p className="text-gray-600">Keep essential appliances running even during grid failures.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
-                    <Wifi className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-secondary">Smart Monitoring</h3>
-                    <p className="text-gray-600">Track and optimize your energy usage in real-time through our online portal.</p>
-                  </div>
-                </div>
+                <ul className="ml-14 space-y-3 list-disc text-gray-600">
+                  <li>Eliminate blackouts and reduce high electricity bills at home</li>
+                  <li>Remain powered at all times (on-grid or off-grid)</li>
+                  <li>Keep your essential appliances running during power blackouts</li>
+                  <li>Smart monitoring system tracks and optimizes energy usage in real-time</li>
+                  <li>Online portal for energy management and monitoring</li>
+                </ul>
               </div>
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
@@ -177,7 +160,7 @@ export default function ResidentialSolutionsPage() {
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-semibold text-secondary mb-6">
-                Why Choose StimaKit?
+                Why Choose Our StimaKit?
               </h2>
               <p className="text-gray-700 text-lg">
                 Experience the future of home energy with our comprehensive solution
@@ -186,21 +169,21 @@ export default function ResidentialSolutionsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Battery className="h-6 w-6 text-primary" />
+                  <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Energy Security</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Quality Guarantee</h3>
                 <p className="text-gray-700">
-                  Your home stays powered even during grid failures, ensuring essential appliances like lighting, refrigeration, and internet remain operational.
+                  Your solar system will contain top-quality equipment and top-tier workmanship by licensed solar technicians.
                 </p>
               </div>
               
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Zap className="h-6 w-6 text-primary" />
+                  <Settings className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Cost Savings</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Expert Solar Design</h3>
                 <p className="text-gray-700">
-                  Reduce your electricity bills by up to 75% by utilizing solar energy and smart power management, protecting you from rising electricity prices.
+                  Get the best optimized design for your needs to ensure that your needs are properly catered for.
                 </p>
               </div>
               
@@ -208,7 +191,7 @@ export default function ResidentialSolutionsPage() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Scale className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-secondary mb-4">Scalable Solution</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-4">Scalable Solar System</h3>
                 <p className="text-gray-700">
                   Start with what you need and easily expand your system as your energy requirements grow over time.
                 </p>

@@ -124,7 +124,7 @@ const projects: ProjectCard[] = [
 ];
 
 const keyFeatures = [
-  "Solar panels customized to your home's unique energy needs",
+  "Solar panels customized to your unique energy needs",
   "Save up to 75% or more on electricity bills",
   "Panels built to last, ensuring reliability for decades",
   "Reduce your carbon footprint with sustainable energy"
