@@ -16,4 +16,10 @@ export const metadata: Metadata = {
       },
     ],
   },
-}; 
+  twitter: {
+    card: 'summary_large_image',
+    title: "Graphene Supercapacitor Energy Storage | W. Giertsen Energy Solutions",
+    description: "Revolutionary graphene supercapacitor storage solutions with ultra-long life, rapid charging, and extreme durability for mission-critical applications.",
+    images: ["/images/supercapacitor-og.jpg"],
+  },
+};
