@@ -326,7 +326,7 @@ export default function SolarOMClient({ keyFeatures, services, expertiseHighligh
               Advanced Monitoring Technology
             </h2>
             <p className="text-gray-700 mb-6">
-              Our state-of-the-art monitoring center is equipped with the latest technology to track your solar system's performance in real-time. Our team of experts constantly monitors system data to identify potential issues before they lead to failures or reduced efficiency.
+              Our team of experts constantly monitors system data to identify potential issues before they lead to failures or reduced efficiency.
             </p>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
