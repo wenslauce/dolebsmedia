@@ -244,8 +244,8 @@ export default function ResidentialSolutionsPage() {
                   description: "Advanced, maintenance-free energy storage with ultra-long lifespan"
                 },
                 {
-                  title: "Battery Rack & Cables",
-                  description: "Professional-grade installation components"
+                  title: "Lithium Battery Option",
+                  description: "Budget-friendly energy storage"
                 },
                 {
                   title: "Online Monitoring System",

@@ -57,15 +57,6 @@ const projects: ProjectCard[] = [
     location: "Thika, Kenya"
   },
   {
-    title: "AMECO",
-    specs: "150kWp",
-    type: "Local Utility Company",
-    gridType: "Fuel Save",
-    previous: "Generator",
-    image: "/images/projects/ameco.avif",
-    location: "Nairobi, Kenya"
-  },
-  {
     title: "Samburu Soroi Lodge",
     specs: "275kWp, 334kWh",
     type: "Safari Lodge",
