@@ -54,7 +54,7 @@ export default function SolarOMClient({ keyFeatures, services, expertiseHighligh
                 Expert Solar Operations & Maintenance
               </h1>
               <p className="text-white/90 text-lg mb-8">
-                Maximize Your Solar Investment with Our Certified Engineers and Energy Auditors
+                Maximize Your Solar Investment with Our Certified Solar Technicians
               </p>
               <Link
                 href="/consultation"
@@ -78,7 +78,7 @@ export default function SolarOMClient({ keyFeatures, services, expertiseHighligh
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-secondary"></h3>
-                <p className="text-gray-600">Certified Energy Auditors</p>
+                <p className="text-gray-600">Certified Solar Technicians</p>
               </div>
             </div>
           </div>

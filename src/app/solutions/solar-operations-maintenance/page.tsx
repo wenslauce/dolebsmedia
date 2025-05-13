@@ -6,7 +6,7 @@ import SolarOMClient from "./SolarOMClient";
 
 export const metadata = {
   title: "Expert Solar Operations & Maintenance | W. Giertsen Energy Solutions",
-  description: "Maximize your solar investment with our team of certified engineers and energy auditors. Professional monitoring, maintenance, and optimization services for your solar systems.",
+  description: "Maximize your solar investment with our team of certified solar technicians. Professional monitoring, maintenance, and optimization services for your solar systems.",
 };
 
 export default function SolarOperationsMaintenancePage() {
@@ -18,7 +18,7 @@ export default function SolarOperationsMaintenancePage() {
 
   const services = [
     {
-      title: "Daily Performance Monitoring",
+      title: "Regular Performance Monitoring",
       index: "01",
       description: "We track your system's performance in real-time to ensure optimal energy production.",
       features: [
@@ -68,7 +68,7 @@ export default function SolarOperationsMaintenancePage() {
 
   const expertiseHighlights = [
     {
-      title: "Expert Team of Certified Engineers & Energy Auditors",
+      title: "Expert Team of Licensed Solar Technicians",
       description: "Our in-house specialists bring years of experience in solar system troubleshooting, maintenance, and performance optimization, ensuring your system consistently delivers the best results.",
       image: "/images/team-engineers.avif"
     },

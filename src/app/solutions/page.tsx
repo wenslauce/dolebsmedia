@@ -61,7 +61,7 @@ export default function SolutionsPage() {
       title: "Supercapacitor Energy Storage",
       description: "Advanced energy storage solutions for maximizing your renewable energy efficiency. Our supercapacitors offer longer lifespans, faster charging, and greater durability than traditional batteries.",
       href: "/solutions/supercapacitor-energy-storage",
-      imageSrc: "/images/battery-storage.avif"
+      imageSrc: "/images/supercapacitor.avif"
     },
     {
       title: "Residential Solutions",
@@ -83,7 +83,7 @@ export default function SolutionsPage() {
     },
     {
       title: "Operations & Maintenance",
-      description: "Expert solar maintenance services provided by our team of certified engineers and energy auditors. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
+      description: "Expert solar maintenance services provided by our team of certified solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
       href: "/solutions/solar-operations-maintenance",
       imageSrc: "/images/operations.avif"
     }
