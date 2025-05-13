@@ -909,8 +909,8 @@ export default function SupercapacitorEnergyStoragePage() {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/projects/ameco.avif"
-                  alt="AMECO"
+                  src="/images/projects/rimi-flowers.avif"
+                  alt="RIMI Flowers"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
@@ -919,7 +919,7 @@ export default function SupercapacitorEnergyStoragePage() {
                 <span className="inline-block px-3 py-1 rounded-full bg-accent-gold/10 text-accent-gold text-xs font-medium mb-3">
                   Fuel Save Solution
                 </span>
-                <h3 className="text-xl font-semibold text-secondary mb-2">AMECO</h3>
+                <h3 className="text-xl font-semibold text-secondary mb-2">RIMI Flowers</h3>
                 <div className="space-y-2 mb-4">
                   <p className="text-gray-600 text-sm">
                     <span className="font-medium">Location:</span> Nairobi, Kenya
