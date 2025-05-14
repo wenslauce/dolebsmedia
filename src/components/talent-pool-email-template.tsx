@@ -35,7 +35,7 @@ export const TalentPoolEmailTemplate = ({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src="https://system.wenslauce.com/wp-content/uploads/2025/02/W. Giertsen Energy Solutions-KE-NOR.png"
+              src="/images/logo.png"
               width="400"
               height="120"
               alt="W. Giertsen Energy Solutions Logo"

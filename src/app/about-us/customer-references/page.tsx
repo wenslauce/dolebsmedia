@@ -86,40 +86,40 @@ const projects: ProjectCard[] = [
     location: "Karen, Nairobi"
   },
   {
-    title: "Residential Installation - Runda",
+    title: "Residential Installation - Nyali",
     specs: "13kWp, 16.5kWh",
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
     image: "/images/projects/mrss.avif",
-    location: "Runda, Nairobi"
+    location: "Nyali,Mombasa"
   },
   {
-    title: "Residential Installation - Kitisuru",
+    title: "Residential Installation - Vipingo",
     specs: "9.9kWp, 22.3kWh",
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
     image: "/images/projects/hw.avif",
-    location: "Kitisuru, Nairobi"
+    location: "Vipingo, Kilifi"
   },
   {
-    title: "Residential Installation - Muthaiga",
+    title: "Residential Installation - Vipingo",
     specs: "9.9kWp, 22.8kWh",
     type: "Residential",
     gridType: "Hybrid",
     previous: "KPLC",
     image: "/images/projects/fv.avif",
-    location: "Muthaiga, Nairobi"
+    location: "Vpingo, Kilifi"
   },
   {
-    title: "School Installation - Lavington",
+    title: "School Installation - Nanyuki",
     specs: "9.9kWp, 16.5kWh",
     type: "Residential (School)",
     gridType: "Hybrid",
     previous: "KPLC",
     image: "/images/projects/gr.avif",
-    location: "Lavington, Nairobi"
+    location: "Nyanyuki, Laikipia"
   }
 ];
 
