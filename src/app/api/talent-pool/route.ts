@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     console.log("Sending application email to company");
     
     // Get company email recipients (taking into account testing limitations)
-    const companyIntendedEmail = "careers@wenslauce.com";
+    const companyIntendedEmail = "energy_careers@giertsen.no";
     const companyEmail = getValidRecipientEmail(companyIntendedEmail);
     
     // Log info about testing mode if applicable

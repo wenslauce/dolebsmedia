@@ -67,16 +67,6 @@ The application uses [Resend](https://resend.com) to send emails. To configure e
 
 **Important**: The default API key in the `.env` file is a placeholder and will not work. You must replace it with your own API key.
 
-### Testing Limitations
-
-When using Resend's free tier for testing, you can only send emails to your own verified email address. 
-
-Currently, the application is configured to send all emails to `chengowensy@gmail.com` for testing.
-
-To test the application with your own email:
-1. Update the `.env` file with your Resend API key
-2. Open `src/app/api/send-email/route.ts` and change both occurrences of `chengowensy@gmail.com` to your own email address
-
 ### Domain Setup for Production
 
 For production use, you must:
