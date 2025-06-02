@@ -31,12 +31,7 @@ export function ClientsLogosSection() {
       width: 180,
       height: 60
     },
-    {
-      src: "/images/clients/UNHCR.svg-1024x300.avif",
-      alt: "UNHCR",
-      width: 180,
-      height: 60
-    },
+    
     {
       src: "/images/clients/wildergroup.avif",
       alt: "Wilder Group",
