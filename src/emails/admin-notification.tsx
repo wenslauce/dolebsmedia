@@ -127,7 +127,7 @@ export const AdminNotificationEmail = ({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img 
-              src="https://Giertsen.com/images/logo.png" 
+              src="/images/logo.png" 
               alt="Giertsen Logo" 
               width="180" 
               height="45" 

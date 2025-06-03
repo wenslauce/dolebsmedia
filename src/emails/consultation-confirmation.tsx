@@ -76,7 +76,7 @@ export const ConsultationConfirmationEmail = ({
           {/* Header */}
           <Section style={logoContainer}>
             <Img 
-              src="https://Giertsen.com/images/logo.png" 
+              src="/images/logo.png" 
               alt="Giertsen Logo" 
               width="180" 
               height="45" 
