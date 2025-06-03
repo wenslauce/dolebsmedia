@@ -69,45 +69,7 @@ export default function AboutUsPage() {
     "Continually reviewing and improving our products, services, and the management system"
   ];
   
-  // Keep team members data but it won't be displayed in the UI
-  const teamMembers = [
-    {
-      name: "John Smith",
-      position: "CEO & Founder",
-      bio: "20+ years of experience in renewable energy and sustainability",
-      image: "/images/team-member1.avif"
-    },
-    {
-      name: "Sarah Johnson",
-      position: "Technical Director",
-      bio: "Expert in photovoltaic systems and energy storage solutions",
-      image: "/images/team-member2.avif"
-    },
-    {
-      name: "Michael Brown",
-      position: "Project Manager",
-      bio: "Specialized in large-scale energy infrastructure projects",
-      image: "/images/team-member3.avif"
-    },
-    {
-      name: "Emma Wilson",
-      position: "Head of Innovation",
-      bio: "Leading our R&D efforts in next-generation solar technology",
-      image: "/images/team-member4.avif"
-    },
-    {
-      name: "David Chen",
-      position: "Operations Director",
-      bio: "Overseeing global operations across our international offices",
-      image: "/images/team-member5.avif"
-    },
-    {
-      name: "Lisa Müller",
-      position: "Sustainability Officer",
-      bio: "Ensuring our operations align with the highest environmental standards",
-      image: "/images/team-member6.avif"
-    }
-  ];
+
   
   const locations = [
     {
@@ -147,7 +109,6 @@ export default function AboutUsPage() {
           coreValues={coreValues}
           certificates={certificates}
           qualityCommitments={qualityCommitments}
-          teamMembers={teamMembers}
           locations={locations}
         />
       </div>

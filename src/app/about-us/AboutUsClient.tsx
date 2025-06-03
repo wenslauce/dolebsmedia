@@ -17,12 +17,7 @@ interface CertificateProps {
   logo: string;
 }
 
-interface TeamMemberProps {
-  name: string;
-  position: string;
-  bio: string;
-  image: string;
-}
+
 
 interface LocationProps {
   city: string;
@@ -38,7 +33,6 @@ interface AboutUsClientProps {
   coreValues: ValueProps[];
   certificates: CertificateProps[];
   qualityCommitments: string[];
-  teamMembers: TeamMemberProps[];
   locations: LocationProps[];
 }
 
@@ -46,7 +40,6 @@ export default function AboutUsClient({
   coreValues,
   certificates,
   qualityCommitments,
-  teamMembers,
   locations
 }: AboutUsClientProps) {
   return (
