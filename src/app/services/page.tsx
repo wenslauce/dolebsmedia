@@ -61,37 +61,37 @@ export default function ServicesPage() {
       title: "Photography",
       description: "Professional photography that captures your brand's essence and tells your story. From dynamic portrait sessions to detailed product showcases, we create stunning visual content.",
       href: "/services/photography",
-      imageSrc: "/images/team-foto.avif"
+      imageSrc: "/images/photography.avif"
     },
     {
       title: "Videography",
       description: "Compelling video content that engages audiences and drives results. Our videography services bring your brand to life through dynamic storytelling and professional production.",
       href: "/services/videography",
-      imageSrc: "/images/team-engineers.avif"
+      imageSrc: "/images/videography.avif"
     },
     {
       title: "Communications",
       description: "Strategic communication solutions that amplify your message effectively. We help you connect with your audience through clear, compelling, and impactful communication strategies.",
       href: "/services/communications",
-      imageSrc: "/images/team-image.avif"
+      imageSrc: "/images/communication.avif"
     },
     {
       title: "Marketing & PR",
       description: "Comprehensive marketing and public relations to boost your visibility. Our integrated approach helps you reach the right audience and build lasting brand recognition.",
       href: "/services/marketing-pr",
-      imageSrc: "/images/who-we-are.avif"
+      imageSrc: "/images/marketing-pr.avif"
     },
     {
       title: "Graphic Designing",
       description: "Creative visual designs that make your brand stand out from the crowd. From logos to marketing materials, we create designs that capture attention and communicate your message effectively.",
       href: "/services/graphic-designing",
-      imageSrc: "/images/about-hero.avif"
+      imageSrc: "/images/graphic-design.avif"
     },
     {
       title: "Web Development & Hosting",
       description: "Modern websites and reliable hosting solutions for your digital presence. We build responsive, fast, and SEO-optimized websites that drive engagement and conversions.",
       href: "/services/web-development-hosting",
-      imageSrc: "/images/careers-hero.avif"
+      imageSrc: "/images/web-development.avif"
     }
   ];
 

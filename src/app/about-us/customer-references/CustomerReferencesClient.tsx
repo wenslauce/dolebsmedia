@@ -158,7 +158,7 @@ export default function CustomerReferencesClient({ projects, keyFeatures }: Cust
               { value: "300+", label: "Projects Completed" },
               { value: "75%", label: "Average Energy Savings" },
               { value: "100K+", label: "Tons CO₂ Saved" },
-              { value: "50+", label: "Years of Excellence" }
+              { value: "5+", label: "Years of Excellence" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

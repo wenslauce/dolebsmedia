@@ -142,7 +142,7 @@ export default function PhotographyPage() {
                       <Camera className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-secondary">500+</h3>
+                      <h3 className="text-2xl font-bold text-secondary">300+</h3>
                       <p className="text-gray-600">Projects Completed</p>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ export default function PhotographyPage() {
                       <Award className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-secondary">8+</h3>
+                      <h3 className="text-2xl font-bold text-secondary">5+</h3>
                       <p className="text-gray-600">Years of Excellence</p>
                     </div>
                   </div>
