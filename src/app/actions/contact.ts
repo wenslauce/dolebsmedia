@@ -26,17 +26,17 @@ export async function submitContactForm(formData: ContactFormData) {
 
     // Send email to company
     await resend.emails.send({
-      from: "W. Giertsen Energy Solutions <energy@giertsen.no>",
-      to: "energy@giertsen.no",
+      from: "Dolebs Media <info@dolebsmedia.co.ke>",
+      to: "info@dolebsmedia.co.ke",
       subject: `New Contact Form Submission: ${validatedData.subject}`,
       react: ContactEmailTemplate({ formData: validatedData, isCompanyEmail: true }),
     });
 
     // Send confirmation email to user
     await resend.emails.send({
-      from: "W. Giertsen Energy Solutions <energy@giertsen.no>",
+      from: "Dolebs Media <info@dolebsmedia.co.ke>",
       to: validatedData.email,
-      subject: "Thank you for contacting W. Giertsen Energy Solutions",
+      subject: "Thank you for contacting Dolebs Media",
       react: ContactEmailTemplate({ formData: validatedData }),
     });
 

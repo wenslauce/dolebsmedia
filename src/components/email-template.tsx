@@ -34,7 +34,7 @@ export const SurveyEmailTemplate = ({
               src="/images/logo.png"
               width="400"
               height="120"
-              alt="W. Giertsen Energy Solutions Logo"
+              alt="Dolebs Media Logo"
               style={logo}
             />
           </Section>
@@ -233,15 +233,15 @@ export const SurveyEmailTemplate = ({
           <Hr style={divider} />
 
           <Section style={footer}>
-            <Text style={footerText}>© 2025 W. Giertsen Energy Solutions. All rights reserved.</Text>
+            <Text style={footerText}>© 2025 Dolebs Media. All rights reserved.</Text>
             <Text style={footerText}>90 Church Rd, Nairobi, Kenya</Text>
             <Text style={footerText}>
-              <Link href="mailto:energy@giertsen.no" style={link}>
-                energy@giertsen.no
+              <Link href="mailto:info@dolebsmedia.co.ke" style={link}>
+                info@dolebsmedia.co.ke
               </Link>{" "}
               |{" "}
               <Link href="tel:+254796214350" style={link}>
-                +254 742 487 867
+                +254 798 740 674
               </Link>
             </Text>
           </Section>

@@ -71,7 +71,7 @@ export const ThankYouEmail = ({
             <Text style={greeting}>Hello {name},</Text>
             
             <Text style={text}>
-              Thank you for your interest in {solutionType} solutions from Giertsen Energy Solutions. 
+              Thank you for your interest in {solutionType} solutions from Dolebs Media. 
               We've received your consultation request and are excited to help you start your journey 
               towards a more sustainable energy future.
             </Text>
@@ -146,7 +146,7 @@ export const ThankYouEmail = ({
           
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Giertsen Energy Solutions. All rights reserved.
+              © {new Date().getFullYear()} Dolebs Media. All rights reserved.
             </Text>
             <Text style={footerText}>
               <Link style={footerLink} href="https://www.Giertsen.com/privacy">Privacy Policy</Link> • 

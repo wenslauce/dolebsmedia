@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Shield, Lock, Eye, FileText, Users, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | W. Giertsen Energy Solutions",
-  description: "Learn how W. Giertsen Energy Solutions collects, uses, and protects your personal information.",
+  title: "Privacy Policy | Dolebs Media",
+  description: "Learn how Dolebs Media collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                   Privacy Policy
                 </h1>
                 <p className="text-white/90 text-lg max-w-3xl">
-              At W. Giertsen Energy Solutions, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data and tell you about your privacy rights.
+              At Dolebs Media Limited, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data and tell you about your privacy rights when using our creative services and digital solutions.
             </p>
                 <div className="flex items-center gap-2 mt-6 text-white/60">
               <Clock className="h-4 w-4" />
@@ -60,10 +60,10 @@ export default function PrivacyPolicyPage() {
                     Introduction
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    This privacy policy applies to all personal data collected through our website, mobile applications, and during the course of our business activities when you interact with us as a customer, supplier, or business partner.
+                    This privacy policy applies to all personal data collected through our website, mobile applications, and during the course of our business activities when you interact with us as a client, supplier, or business partner for our creative services including photography, videography, communications, marketing & PR, graphic design, and web development services.
                   </p>
                   <p className="text-gray-700">
-                    W. Giertsen Energy Solutions ("we", "us", "our") is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, you can be assured that it will only be used in accordance with this privacy policy.
+                    Dolebs Media Limited ("we", "us", "our") is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website or engaging our creative services, you can be assured that it will only be used in accordance with this privacy policy.
                   </p>
                 </section>
 
@@ -78,10 +78,11 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
                     <li>Name and contact information including email address, phone number, and mailing address</li>
-                    <li>Demographic information such as postcode, preferences, and interests</li>
-                    <li>Information relevant to customer surveys and/or offers</li>
-                    <li>Information about your property for solar installation assessment</li>
+                    <li>Business information such as company name, industry, and project requirements</li>
+                    <li>Information relevant to client surveys, feedback, and service improvements</li>
+                    <li>Project-specific information including creative briefs, brand guidelines, and content requirements</li>
                     <li>Details of your interactions with our website, including browsing patterns and technical information such as IP address, browser type, and operating system</li>
+                    <li>Content and materials provided for our creative services including images, videos, text, and brand assets</li>
                   </ul>
                   <p className="text-gray-700">
                     We collect this information through direct interactions, automated technologies or interactions, and third parties.
@@ -98,13 +99,14 @@ export default function PrivacyPolicyPage() {
                     We use your personal data for the following purposes:
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                    <li>To provide and improve our products and services</li>
-                    <li>To personalize your experience and deliver content and product offerings relevant to your interests</li>
-                    <li>To process and deliver your order including managing payments, fees, and charges</li>
+                    <li>To provide and improve our creative services including photography, videography, communications, marketing & PR, graphic design, and web development</li>
+                    <li>To personalize your experience and deliver creative solutions and service offerings relevant to your business needs</li>
+                    <li>To process and deliver your creative projects including managing payments, fees, and project timelines</li>
                     <li>To manage our relationship with you, including notifying you about changes to our terms or privacy policy</li>
                     <li>To administer and protect our business and website</li>
-                    <li>To deliver relevant website content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you</li>
-                    <li>To make suggestions and recommendations to you about goods or services that may be of interest to you</li>
+                    <li>To deliver relevant website content and advertisements to you and measure or understand the effectiveness of our marketing efforts</li>
+                    <li>To make suggestions and recommendations to you about creative services that may be of interest to your business</li>
+                    <li>To create and deliver custom creative content, marketing materials, and digital solutions</li>
                   </ul>
                   <p className="text-gray-700">
                     We will only use your personal data when the law allows us to. Most commonly, we will use your personal data where we need to perform the contract we are about to enter into or have entered into with you, where it is necessary for our legitimate interests, or where we need to comply with a legal obligation.
@@ -166,10 +168,10 @@ export default function PrivacyPolicyPage() {
                     If you have any questions about this privacy policy or our privacy practices, please contact us at:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <p className="font-medium text-secondary mb-2">W. Giertsen Energy Solutions</p>
-                    <p className="text-gray-700">Email: energy@giertsen.no</p>
-                    <p className="text-gray-700">Phone: +254 742 487 867</p>
-                    <p className="text-gray-700">Address: Church Road No 90, Westlands, Nairobi, Kenya</p>
+                    <p className="font-medium text-secondary mb-2">Dolebs Media Limited</p>
+                    <p className="text-gray-700">Email: info@dolebsmedia.co.ke</p>
+                    <p className="text-gray-700">Phone: +254 798 740 674</p>
+                    <p className="text-gray-700">Address: Nairobi, Kenya</p>
                   </div>
                 </section>
 

@@ -211,7 +211,7 @@ export const ConsultationConfirmationEmail = ({
           
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Giertsen Energy Solutions. All rights reserved.
+              © {new Date().getFullYear()} Dolebs Media. All rights reserved.
             </Text>
             <Text style={footerText}>
               <Link style={footerLink} href="https://Giertsen.com/privacy">Privacy Policy</Link> • 

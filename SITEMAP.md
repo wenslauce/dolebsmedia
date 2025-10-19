@@ -1,6 +1,6 @@
 # Website Sitemap
 
-This document provides a comprehensive overview of all pages and routes in the W. Giertsen Energy Solutions website (https://www.giertsenenergy.com/).
+This document provides a comprehensive overview of all pages and routes in the Dolebs Media website (https://www.dolebsmedia.co.ke/).
 
 ## Main Pages
 

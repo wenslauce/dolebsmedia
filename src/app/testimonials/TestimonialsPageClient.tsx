@@ -105,7 +105,7 @@ export default function TestimonialsPageClient({
               transition={{ duration: 0.7 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 leading-tight">
-                Why Our Customers Trust Giertsen Energy
+                Why Our Customers Trust Dolebs Media
               </h1>
               <p className="text-white/90 text-lg mb-8">
                 Our mission is clear: to deliver clean, reliable, and affordable energy solutions that create real impact. But our true success is reflected in the lives we transform.
@@ -125,7 +125,7 @@ export default function TestimonialsPageClient({
           transition={{ duration: 0.6 }}
         >
           <p className="text-gray-700 text-lg leading-relaxed">
-            From energy-independent homes to innovative businesses embracing sustainability, our customers' journeys with W. Giertsen Energy Solutions highlight the power of renewable energy. Explore how we are driving a greener, more resilient future—one project at a time.
+            From energy-independent homes to innovative businesses embracing sustainability, our customers' journeys with Dolebs Media highlight the power of renewable energy. Explore how we are driving a greener, more resilient future—one project at a time.
           </p>
         </motion.div>
       </div>

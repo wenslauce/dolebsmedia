@@ -53,7 +53,7 @@ export const MeetingReminderEmail = ({
             <Text style={greeting}>Hello {name},</Text>
             
             <Text style={text}>
-              This is a friendly reminder that your {solutionType} consultation with Giertsen Energy Solutions 
+              This is a friendly reminder that your {solutionType} consultation with Dolebs Media 
               is scheduled for tomorrow, <strong>{formattedDate}</strong> at <strong>{meetingTime}</strong>.
             </Text>
             
@@ -129,7 +129,7 @@ export const MeetingReminderEmail = ({
           
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Giertsen Energy Solutions. All rights reserved.
+              © {new Date().getFullYear()} Dolebs Media. All rights reserved.
             </Text>
             <Text style={footerText}>
               <Link style={footerLink} href="https://www.Giertsen.com/privacy">Privacy Policy</Link> • 

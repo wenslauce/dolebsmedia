@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Zap, Building, Home, CheckSquare, WrenchIcon, ArrowUpRight, Heart } from "lucide-react";
+import { ArrowRight, Camera, Video, MessageSquare, Megaphone, Palette, Globe, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -43,7 +43,7 @@ const SolutionCard = ({
         className={cn(
           "group relative block h-full overflow-hidden rounded-2xl border transition-all duration-300",
           isHovered 
-            ? "border-primary/30 shadow-lg shadow-primary/10 z-20" 
+            ? "border-red-600/30 shadow-lg shadow-red-600/10 z-20" 
             : "border-gray-200 shadow-sm bg-white z-10"
         )}
       >
@@ -83,11 +83,11 @@ const SolutionCard = ({
         <div className="relative flex flex-col h-full p-6 z-10">
           <div className={cn(
             "flex items-center gap-3 mb-4",
-            isHovered ? "text-primary" : "text-white"
+            isHovered ? "text-red-600" : "text-white"
           )}>
             <div className={cn(
               "p-2 rounded-xl transition-colors",
-              isHovered ? "bg-primary/10" : "bg-white/10"
+              isHovered ? "bg-red-600/10" : "bg-white/10"
             )}>
               {icon}
             </div>
@@ -113,7 +113,7 @@ const SolutionCard = ({
           <div className="mt-auto pt-6 flex items-center gap-2">
             <span className={cn(
               "text-sm font-medium transition-all duration-300",
-              isHovered ? "text-primary" : "text-white"
+              isHovered ? "text-red-600" : "text-white"
             )}>
               Explore Solution
             </span>
@@ -122,7 +122,7 @@ const SolutionCard = ({
               transition={{ duration: 0.3 }}
             >
               {isHovered ? (
-                <ArrowUpRight size={18} className="text-primary" />
+                <ArrowUpRight size={18} className="text-red-600" />
               ) : (
                 <ArrowRight size={18} className="text-white" />
               )}
@@ -139,39 +139,46 @@ const SolutionsOverview = () => {
   
   const solutions = [
     {
-      imageSrc: "/images/supercapacitor.avif",
-      title: "Supercapacitor Energy Storage",
-      href: "/solutions/supercapacitor-energy-storage",
-      description: "Advanced energy storage solutions for maximizing your renewable energy efficiency. Our supercapacitors offer longer lifespans, faster charging, and greater durability than traditional batteries.",
-      icon: <Zap size={20} />
+      imageSrc: "/images/photography.avif",
+      title: "Photography",
+      href: "/services/photography",
+      description: "Professional photography that captures your brand's essence and tells your story. From product shots to corporate portraits, we create stunning visuals that resonate with your audience and elevate your brand presence.",
+      icon: <Camera size={20} />
     },
     {
-      imageSrc: "/images/stima-kit.avif",
-      title: "Residential Solutions",
-      href: "/solutions/residential-solutions",
-      description: "Solar power systems designed specifically for homes and residential applications. Enjoy energy independence and reduced electricity bills with our custom residential installations.",
-      icon: <Home size={20} />
+      imageSrc: "/images/videography.avif",
+      title: "Videography",
+      href: "/services/videography",
+      description: "Compelling video content that engages audiences and drives results. Our cinematic approach brings your brand to life through storytelling, promotional videos, and dynamic content that converts viewers into customers.",
+      icon: <Video size={20} />
     },
     {
-      imageSrc: "/images/solar-panels.avif",
-      title: "Commercial Solutions",
-      href: "/solutions/commercial-solutions",
-      description: "Customized energy solutions to reduce costs and improve sustainability for businesses. Our commercial systems are scalable, reliable, and engineered for maximum ROI.",
-      icon: <Building size={20} />
+      imageSrc: "/images/communication.avif",
+      title: "Communication",
+      href: "/services/communications",
+      description: "Strategic communication solutions that amplify your message effectively. We craft compelling narratives, manage your brand voice, and ensure your message reaches the right audience at the right time.",
+      icon: <MessageSquare size={20} />
     },
     {
-      imageSrc: "/images/humanitarian-hero.avif",
-      title: "Humanitarian Solutions",
-      href: "/solutions/humanitarian-solutions",
-      description: "Reliable solar solutions for humanitarian operations worldwide. Supporting refugee camps, health clinics, and emergency coordination hubs with sustainable energy solutions.",
-      icon: <Heart size={20} />
+      imageSrc: "/images/marketing-pr.avif",
+      title: "Marketing & PR",
+      href: "/services/marketing-pr",
+      description: "Comprehensive marketing and public relations to boost your visibility. From campaign strategy to media relations, we help you build brand awareness and establish thought leadership in your industry.",
+      icon: <Megaphone size={20} />
     },
     {
-      imageSrc: "/images/operations.avif",
-      title: "Operations & Maintenance",
-      href: "/solutions/solar-operations-maintenance",
-      description: "Expert solar maintenance services provided by our team of  solar technicians. Maximize your investment with our comprehensive monitoring, maintenance, and optimization services.",
-      icon: <WrenchIcon size={20} />
+      imageSrc: "/images/graphic-design.avif",
+      title: "Graphic Designing",
+      href: "/services/graphic-designing",
+      description: "Creative visual designs that make your brand stand out from the crowd. Our innovative designs capture attention, communicate your values, and create memorable brand experiences across all touchpoints.",
+      icon: <Palette size={20} />
+    },
+    {
+      imageSrc: "/images/web-development.avif",
+      title: "Web Development & Hosting",
+      href: "/services/web-development-hosting",
+      description: "Modern websites and reliable hosting solutions for your digital presence. We build responsive, fast-loading websites that convert visitors into customers, backed by secure and scalable hosting infrastructure.",
+      icon: <Globe size={20} />
     }
   ];
 
@@ -189,18 +196,16 @@ const SolutionsOverview = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 mb-6">
-            <Zap className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-secondary">Our Solutions</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6" style={{ backgroundColor: '#E31E2405', borderColor: '#E31E2410' }}>
+            <Camera className="h-4 w-4" style={{ color: '#E31E24' }} />
+            <span className="text-sm font-medium text-secondary">Our Services</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary mb-6">Clean Energy Solutions for Growth</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary mb-6">Creative Solutions for Your Brand</h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
-          Cut your energy costs with solar power that pays for itself.
-          Generate your electricity, reduce monthly bills, and protect your business from rising energy costs.
-           Our simple process gets you powered by sunshine with no hassle.
+            Transform your brand with our comprehensive creative services. From stunning photography and compelling videos to strategic communication and modern web development, we deliver results that elevate your business and engage your audience.
           </p>
-          <div className="mt-6 h-1 w-20 bg-gradient-to-r from-primary to-accent-gold rounded-full mx-auto" />
+          <div className="mt-6 h-1 w-20 rounded-full mx-auto" style={{ background: 'linear-gradient(to right, #E31E24, #E31E24)' }} />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -227,10 +232,13 @@ const SolutionsOverview = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
         >
           <Link 
-            href="/consultation" 
-            className="inline-flex items-center gap-2 text-white bg-primary hover:bg-primary/90 px-6 py-3 rounded-md font-medium transition-all duration-300 group"
+            href="/contact" 
+            className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 group"
+            style={{ backgroundColor: '#E31E24' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#C41E3A'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E31E24'}
           >
-            Request Energy Consultation
+            Start Your Creative Project
             <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </motion.div>

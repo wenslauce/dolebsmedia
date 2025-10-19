@@ -14,45 +14,68 @@ interface ClientLogo {
 export function ClientsLogosSection() {
   const clientLogos: ClientLogo[] = [
     {
-      src: "/images/clients/soroi-popup-logo.avif",
-      alt: "Soroi",
+      src: "/images/clients/190116_base_resources_-_brand_assets_rgb_base_titanium_rgb_primary_red_.avif",
+      alt: "Base Resources",
       width: 180,
       height: 60
     },
     {
-      src: "/images/clients/nis-logo-1024x153.avif",
-      alt: "NIS",
+      src: "/images/clients/azuri.avif",
+      alt: "Azuri",
       width: 180,
       height: 60
     },
     {
-      src: "/images/clients/Youth-as-agents-of-Community-Development-United-Nations-Development-Programme.avif",
-      alt: "United Nations Development Programme",
-      width: 180,
-      height: 60
-    },
-    
-    {
-      src: "/images/clients/wildergroup.avif",
-      alt: "Wilder Group",
+      src: "/images/clients/DAHLIA INSTITUTE TRANSPARENT LOGO.avif",
+      alt: "Dahlia Institute",
       width: 180,
       height: 60
     },
     {
-      src: "/images/clients/open.graph_.logo_.avif",
-      alt: "Open Graph",
+      src: "/images/clients/icdl.avif",
+      alt: "ICDL",
       width: 180,
       height: 60
     },
     {
-      src: "/images/clients/images.avif",
-      alt: "Client",
+      src: "/images/clients/KEEP HOPE ALIVE TRANSPARENT.avif",
+      alt: "Keep Hope Alive",
       width: 180,
       height: 60
     },
     {
-      src: "/images/clients/870fc1ad-10a0-4f64-9773-940b5a0f5139.avif",
-      alt: "Client",
+      src: "/images/clients/lecbc ser.avif",
+      alt: "LECBC",
+      width: 180,
+      height: 60
+    },
+    {
+      src: "/images/clients/Ministry-of-Education.avif",
+      alt: "Ministry of Education",
+      width: 180,
+      height: 60
+    },
+    {
+      src: "/images/clients/mivida.avif",
+      alt: "Mivida",
+      width: 180,
+      height: 60
+    },
+    {
+      src: "/images/clients/multichoice.avif",
+      alt: "Multichoice",
+      width: 180,
+      height: 60
+    },
+    {
+      src: "/images/clients/refugeconsortium.avif",
+      alt: "Refuge Consortium",
+      width: 180,
+      height: 60
+    },
+    {
+      src: "/images/clients/riara.avif",
+      alt: "Riara",
       width: 180,
       height: 60
     }

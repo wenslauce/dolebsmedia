@@ -5,8 +5,8 @@ import Link from "next/link";
 import TalentPoolFormModal from "@/components/TalentPoolFormModal";
 
 export const metadata = {
-  title: "Career at W. Giertsen Energy Solutions | Join Our Team",
-  description: "Join W. Giertsen Energy Solutions and help shape the future of sustainable energy. Explore our career opportunities and job openings.",
+  title: "Career at Dolebs Media Ltd | Join Our Creative Team",
+  description: "Join Dolebs Media Ltd and help create exceptional visual content. Explore our career opportunities in photography, videography, and creative services.",
 };
 
 interface JobPosting {
@@ -21,27 +21,27 @@ interface JobPosting {
 const jobPostings: JobPosting[] = [
   {
     id: 1,
-    title: "Solar Project Engineer",
-    location: "Berlin, Germany",
+    title: "Photographer/Videographer",
+    location: "Nairobi, Kenya",
     type: "Full-time",
-    department: "Engineering",
-    description: "Design and implement commercial-scale solar installations, working with cutting-edge photovoltaic technology."
+    department: "Creative",
+    description: "Capture stunning visuals for commercial photography and videography projects, working with cutting-edge equipment and creative techniques."
   },
   {
     id: 2,
-    title: "Energy Systems Analyst",
-    location: "Hamburg, Germany",
+    title: "Graphic Designer",
+    location: "Nairobi, Kenya",
     type: "Full-time",
-    department: "Analytics",
-    description: "Analyze energy consumption patterns and develop optimization strategies for our clients."
+    department: "Design",
+    description: "Create compelling visual designs and graphics that complement our photography and videography work, with expertise in branding and visual communication."
   },
   {
     id: 3,
-    title: "Project Manager",
-    location: "Munich, Germany",
+    title: "Post-Production Specialist",
+    location: "Nairobi, Kenya",
     type: "Full-time",
-    department: "Operations",
-    description: "Lead and coordinate sustainable energy projects from conception to completion."
+    department: "Production",
+    description: "Edit and enhance visual content through meticulous post-production work, focusing on color correction, retouching, and cutting-edge effects."
   }
 ];
 
@@ -55,7 +55,7 @@ export default function CareerPage() {
         <div className="relative h-[400px]">
           <Image
             src="/images/careers-hero.avif"
-            alt="Careers at W. Giertsen Energy Solutions"
+            alt="Careers at Dolebs Media"
             fill
             className="object-cover"
           />
@@ -66,7 +66,7 @@ export default function CareerPage() {
                   Career Opportunities
                 </h1>
                 <p className="text-white/80 text-lg">
-                  Help shape the future of sustainable energy with W. Giertsen Energy Solutions
+                  Join our creative team and help bring visions to life with Dolebs Media Ltd
                 </p>
               </div>
             </div>
@@ -77,12 +77,12 @@ export default function CareerPage() {
         <div className="container-custom py-16">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6">
-              Why Join W. Giertsen Energy Solutions?
+              Why Join Dolebs Media Ltd?
             </h2>
             <p className="text-gray-700">
-              Be part of a team that's driving the transition to sustainable energy.
+              Be part of a creative team that's passionate about bringing visions to life through exceptional imagery and videography.
               We offer competitive benefits, professional development opportunities,
-              and the chance to make a real impact on climate protection.
+              and the chance to work on exciting creative projects that make a real impact.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function CareerPage() {
               </div>
               <h3 className="text-xl font-semibold text-secondary mb-3">Innovation</h3>
               <p className="text-gray-700">
-                Work with cutting-edge technology and contribute to innovative energy solutions.
+                Work with cutting-edge creative technology and contribute to innovative visual solutions.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export default function CareerPage() {
               </div>
               <h3 className="text-xl font-semibold text-secondary mb-3">Impact</h3>
               <p className="text-gray-700">
-                Make a real difference in the fight against climate change.
+                Make a real difference by creating compelling visual content that elevates brands and tells powerful stories.
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function CareerPage() {
                   Disclaimer: Submitting your CV does not guarantee a response or future employment. 
                   While we may not have open positions at the moment, we will keep your application on file for future opportunities. 
                   If a suitable role becomes available, we will reach out to qualified candidates. 
-                  Thank you for your interest in joining W. Giertsen Energy Solutions!
+                  Thank you for your interest in joining Dolebs Media Ltd!
                 </p>
               </div>
             </div>

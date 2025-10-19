@@ -5,22 +5,22 @@ import BackToTop from "@/components/BackToTop";
 import GDPRConsent from "@/components/GDPRConsent";
 
 export const metadata: Metadata = {
-  title: "Giertsen Energy Solutions | Solar powered systems and solutions for a sustainable world",
-  description: "Leading supplier of innovative solar power solutions with advanced supercapacitor technology, delivering sustainable energy across Kenya.",
+  title: "Dolebs Studio | No cookie-cutter websites. No fluff.",
+  description: "Just real tools and smart strategies to grow your business and elevate your brand.",
   icons: {
     icon: '/images/fav.ico',
   },
   openGraph: {
-    title: "Giertsen Energy Solutions | Solar powered systems and solutions for a sustainable world",
-    description: "Leading supplier of innovative solar power solutions with advanced supercapacitor technology, delivering sustainable energy across Kenya.",
-    url: 'https://giertsenenergy.com',
-    siteName: 'Giertsen Energy Solutions',
+    title: "Dolebs Studio | No cookie-cutter websites. No fluff.",
+    description: "Just real tools and smart strategies to grow your business and elevate your brand.",
+    url: 'https://dolebsstudio.com',
+    siteName: 'Dolebs Studio',
     images: [
       {
         url: "/images/supercapacitor-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Giertsen Energy Solutions - Sustainable Energy Solutions",
+        alt: "Dolebs Studio - Creative Digital Solutions",
       },
     ],
     locale: 'en_US',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Giertsen Energy Solutions | Solar powered systems and solutions for a sustainable world",
-    description: "Leading supplier of innovative solar power solutions with advanced supercapacitor technology, delivering sustainable energy across Kenya.",
+    title: "Dolebs Studio | No cookie-cutter websites. No fluff.",
+    description: "Just real tools and smart strategies to grow your business and elevate your brand.",
     images: ["/images/supercapacitor-og.jpg"],
   },
 };

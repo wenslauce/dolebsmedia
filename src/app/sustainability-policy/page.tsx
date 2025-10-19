@@ -5,8 +5,8 @@ import Image from "next/image";
 import { FileText, Leaf, Globe, Lightbulb, Recycle, Clock, Building, Users, ShieldCheck, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Sustainability Policy | W. Giertsen Energy Solutions",
-  description: "W. Giertsen Energy Solutions commitment to environmental sustainability and responsible business practices.",
+  title: "Sustainability Policy | Dolebs Media",
+  description: "Dolebs Media commitment to environmental sustainability and responsible business practices.",
 };
 
 export default function SustainabilityPolicyPage() {
@@ -60,7 +60,7 @@ export default function SustainabilityPolicyPage() {
                     Our Commitment to Sustainability
                   </h2>
                   <p className="text-gray-700 mb-6">
-                    At W. Giertsen Energy Solutions, sustainability is at the core of how we design, deliver, and support our solar systems. We focus on providing long-lasting, efficient, and low-maintenance energy solutions that reduce dependency on diesel generators and other environmentally harmful sources — particularly in remote and off-grid locations.
+                    At Dolebs Media, sustainability is at the core of how we design, deliver, and support our solar systems. We focus on providing long-lasting, efficient, and low-maintenance energy solutions that reduce dependency on diesel generators and other environmentally harmful sources — particularly in remote and off-grid locations.
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
                     <h3 className="text-lg font-medium text-secondary mb-4">Our approach emphasises practical impact:</h3>

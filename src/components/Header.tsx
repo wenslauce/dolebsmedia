@@ -15,75 +15,54 @@ import {
   NavigationMenuTrigger,
   NavigationMenuIndicator
 } from "@/components/ui/navigation-menu";
-import { Menu, ChevronDown, X, ZapIcon, HomeIcon, BuildingIcon, CheckSquareIcon, WrenchIcon } from "lucide-react";
+import { Menu, ChevronDown, X, Camera, Video, MessageSquare, Megaphone, Palette, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const services = [
   { 
-    title: "All Solutions",
-    href: "/solutions",
-    icon: <ZapIcon className="w-4 h-4 text-primary-green" />
+    title: "All Services",
+    href: "/services",
+    icon: <Camera className="w-4 h-4 text-primary-green" />
   },
   { 
-    title: "Supercapacitor Energy Storage",
-    href: "/solutions/supercapacitor-energy-storage",
-    icon: <ZapIcon className="w-4 h-4 text-primary-green" />
+    title: "Photography",
+    href: "/services/photography",
+    icon: <Camera className="w-4 h-4 text-primary-green" />
   },
   { 
-    title: "Residential Solutions",
-    href: "/solutions/residential-solutions",
-    icon: <HomeIcon className="w-4 h-4 text-primary-green" />
+    title: "Videography",
+    href: "/services/videography",
+    icon: <Video className="w-4 h-4 text-primary-green" />
   },
   { 
-    title: "Commercial Solutions",
-    href: "/solutions/commercial-solutions",
-    icon: <BuildingIcon className="w-4 h-4 text-primary-green" />
+    title: "Communications",
+    href: "/services/communications",
+    icon: <MessageSquare className="w-4 h-4 text-primary-green" />
   },
   { 
-    title: "Humanitarian Solutions",
-    href: "/solutions/humanitarian-solutions",
-    icon: <CheckSquareIcon className="w-4 h-4 text-primary-green" />
+    title: "Marketing & PR",
+    href: "/services/marketing-pr",
+    icon: <Megaphone className="w-4 h-4 text-primary-green" />
   },
   { 
-    title: "Operations & Maintenance",
-    href: "/solutions/solar-operations-maintenance",
-    icon: <WrenchIcon className="w-4 h-4 text-primary-green" />
+    title: "Graphic Designing",
+    href: "/services/graphic-designing",
+    icon: <Palette className="w-4 h-4 text-primary-green" />
+  },
+  { 
+    title: "Web Development & Hosting",
+    href: "/services/web-development-hosting",
+    icon: <Globe className="w-4 h-4 text-primary-green" />
   }
-];
-
-const aboutSubmenu = [
-  {
-    title: "About Us",
-    href: "/about-us"
-  },
-  {
-    title: "Customer References",
-    href: "/about-us/customer-references"
-  },
-  {
-    title: "Testimonials",
-    href: "/testimonials"
-  },
-  {
-    title: "Career",
-    href: "/career"
-  }
-];
-
-const mainLinks = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about-us", hasSubmenu: true }
 ];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeTab, setActiveTab] = useState<string | null>(null);
   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
   // Mobile menu state
   const [openSolutionsMenu, setOpenSolutionsMenu] = useState(false);
-  const [openAboutMenu, setOpenAboutMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,58 +96,61 @@ const Header = () => {
           className={cn(
             "absolute inset-0 rounded-xl backdrop-blur-xl transition-all duration-500 overflow-hidden",
             isScrolled 
-              ? "bg-secondary/75 shadow-lg shadow-secondary/10" 
-              : "bg-secondary/40"
+              ? "bg-white/40 shadow-lg shadow-white/20" 
+              : "bg-white/25"
           )}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Frozen white glass overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-white/30 to-white/40 rounded-xl"></div>
+          
+          {/* Enhanced glass reflection effect */}
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-white/80 to-transparent"></div>
+          
+          {/* Additional frozen glass layer */}
+          <div className="absolute inset-0 bg-white/10 rounded-xl"></div>
+          
           {/* Enhanced curved shape at the bottom */}
           <div className="absolute -bottom-1 left-0 right-0 h-12 w-full">
             <svg width="100%" height="100%" viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
               <path 
                 d="M0 0L48 5.47826C96 10.9565 192 21.913 288 28.5217C384 35.1304 480 37.3913 576 35.1304C672 32.8696 768 26.2609 864 21.913C960 17.5652 1056 15.3043 1152 17.5652C1248 19.8261 1344 26.2609 1392 28.5217L1440 30.7826V50H1392C1344 50 1248 50 1152 50C1056 50 960 50 864 50C768 50 672 50 576 50C480 50 384 50 288 50C192 50 96 50 48 50H0V0Z" 
                 fill="currentColor" 
-                className="text-white opacity-5"
+                className="text-white opacity-10"
               />
             </svg>
           </div>
           
-          {/* Animated gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary/5 via-primary/5 to-secondary/5 opacity-30" />
-          
-          {/* Enhanced top highlight */}
-          <div className="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-          
-          {/* Side highlights */}
-          <div className="absolute top-6 bottom-6 left-0 w-[1px] bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-          <div className="absolute top-6 bottom-6 right-0 w-[1px] bg-gradient-to-b from-transparent via-white/20 to-transparent" />
+          {/* Enhanced side highlights */}
+          <div className="absolute top-6 bottom-6 left-0 w-[2px] bg-gradient-to-b from-transparent via-white/60 to-transparent" />
+          <div className="absolute top-6 bottom-6 right-0 w-[2px] bg-gradient-to-b from-transparent via-white/60 to-transparent" />
 
-          {/* Blurred glow spots for more dimension */}
+          {/* Frozen white glass glow spots */}
           <motion.div
-            className="absolute top-1/2 left-1/4 -translate-y-1/2 w-40 h-16 bg-primary/10 rounded-full blur-3xl opacity-40"
+            className="absolute top-1/2 left-1/4 -translate-y-1/2 w-40 h-16 bg-white/40 rounded-full blur-3xl opacity-50"
             animate={{
-              opacity: [0.2, 0.4, 0.2],
-              scale: [1, 1.1, 1]
+              opacity: [0.3, 0.5, 0.3],
+              scale: [1, 1.05, 1]
             }}
             transition={{
-              duration: 8,
+              duration: 12,
               repeat: Infinity,
               ease: "easeInOut"
             }}
           />
           <motion.div
-            className="absolute top-1/2 right-1/4 -translate-y-1/2 w-40 h-16 bg-accent-gold/10 rounded-full blur-3xl opacity-40"
+            className="absolute top-1/2 right-1/4 -translate-y-1/2 w-40 h-16 bg-white/35 rounded-full blur-3xl opacity-50"
             animate={{
-              opacity: [0.2, 0.4, 0.2],
-              scale: [1.1, 1, 1.1]
+              opacity: [0.3, 0.5, 0.3],
+              scale: [1.05, 1, 1.05]
             }}
             transition={{
-              duration: 8,
+              duration: 12,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: 3
+              delay: 4
             }}
           />
         </motion.div>
@@ -182,16 +164,14 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Link href="/" className="transition-opacity hover:opacity-90">
-              <div className="bg-white rounded-xl px-3 py-1.5 shadow-lg">
-                <Image 
-                  src="/images/logo.png" 
-                  alt="W. Giertsen Energy Solutions" 
-                  width={180} 
-                  height={60} 
-                  priority 
-                  className="h-[32px] w-auto object-contain" 
-                />
-              </div>
+              <Image 
+                src="/images/logo.png" 
+                alt="Dolebs Media" 
+                width={100} 
+                height={40} 
+                priority 
+                className="h-[24px] w-auto object-contain" 
+              />
             </Link>
           </motion.div>
 
@@ -202,7 +182,7 @@ const Header = () => {
                 {/* Home link */}
                 <NavigationMenuItem>
                   <Link href="/" 
-                    className="text-white hover:text-accent-gold px-5 py-2 rounded-lg transition-all duration-200 hover:bg-white/10 border border-transparent hover:border-white/10 flex items-center"
+                    className="text-gray-800 hover:text-accent-gold px-5 py-2 rounded-lg transition-all duration-200 hover:bg-white/30 border border-transparent hover:border-white/50 flex items-center"
                     onMouseEnter={() => setHoveredTab("Home")}
                     onMouseLeave={() => setHoveredTab(null)}
                   >
@@ -221,16 +201,16 @@ const Header = () => {
                 {/* Solutions dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className="bg-transparent text-white hover:text-accent-gold data-[state=open]:text-accent-gold hover:bg-white/10 focus:bg-white/10 px-5 data-[state=open]:bg-white/15 rounded-lg border border-transparent hover:border-white/10 data-[state=open]:border-white/20 backdrop-filter transition-all duration-200"
-                    onMouseEnter={() => setHoveredTab("Solutions")}
+                    className="bg-transparent text-gray-800 hover:text-accent-gold data-[state=open]:text-accent-gold hover:bg-white/30 focus:bg-white/30 px-5 data-[state=open]:bg-white/35 rounded-lg border border-transparent hover:border-white/50 data-[state=open]:border-white/60 backdrop-filter transition-all duration-200"
+                    onMouseEnter={() => setHoveredTab("Services")}
                     onMouseLeave={() => setHoveredTab(null)}
                   >
                     <span className="flex items-center gap-1 relative">
-                      Solutions
+                      Services
                       <motion.span 
                         className="absolute -bottom-1 left-0 h-[1px] bg-accent-gold/50" 
                         initial={{ width: 0 }}
-                        animate={{ width: hoveredTab === "Solutions" ? "100%" : 0 }}
+                        animate={{ width: hoveredTab === "Services" ? "100%" : 0 }}
                         transition={{ duration: 0.2 }}
                       />
                     </span>
@@ -284,14 +264,14 @@ const Header = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* About Us dropdown */}
+                {/* About Us link */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className="bg-transparent text-white hover:text-accent-gold data-[state=open]:text-accent-gold hover:bg-white/10 focus:bg-white/10 px-5 data-[state=open]:bg-white/15 rounded-lg border border-transparent hover:border-white/10 data-[state=open]:border-white/20 backdrop-filter transition-all duration-200"
+                  <Link href="/about-us" 
+                    className="text-gray-800 hover:text-accent-gold px-5 py-2 rounded-lg transition-all duration-200 hover:bg-white/30 border border-transparent hover:border-white/50 flex items-center"
                     onMouseEnter={() => setHoveredTab("About Us")}
                     onMouseLeave={() => setHoveredTab(null)}
                   >
-                    <span className="flex items-center gap-1 relative">
+                    <span className="relative">
                       About Us
                       <motion.span 
                         className="absolute -bottom-1 left-0 h-[1px] bg-accent-gold/50" 
@@ -300,51 +280,7 @@ const Header = () => {
                         transition={{ duration: 0.2 }}
                       />
                     </span>
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[250px] gap-2 p-4 rounded-xl overflow-hidden">
-                      {aboutSubmenu.map((item, index) => (
-                        <motion.li 
-                          key={item.href}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.2, delay: index * 0.05 }}
-                          onMouseEnter={() => setHoveredIndex(index + 100)}
-                          onMouseLeave={() => setHoveredIndex(null)}
-                        >
-                          <NavigationMenuLink asChild>
-                            <Link
-                              href={item.href}
-                              className={cn(
-                                "group relative block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors",
-                                "hover:bg-accent-gold/10 hover:text-primary-green focus:bg-accent-gold/10 focus:text-primary-green",
-                                hoveredIndex === index + 100 ? "bg-accent-gold/5" : ""
-                              )}
-                            >
-                              <div className="text-sm font-medium leading-none text-secondary group-hover:text-primary-green transition-colors duration-150">
-                                {item.title}
-                              </div>
-
-                              {/* Animated highlight border */}
-                              <AnimatePresence>
-                                {hoveredIndex === index + 100 && (
-                                  <motion.span 
-                                    className="absolute inset-0 rounded-md border border-primary-green/20"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.2 }}
-                                  />
-                                )}
-                              </AnimatePresence>
-                            </Link>
-                          </NavigationMenuLink>
-                        </motion.li>
-                      ))}
-                      {/* Decorative element */}
-                      <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-70" />
-                    </ul>
-                  </NavigationMenuContent>
+                  </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -373,12 +309,12 @@ const Header = () => {
           <div className="lg:hidden z-10">
             <Sheet>
               <SheetTrigger className="lg:hidden focus:outline-none focus:ring-0">
-                <Menu className="w-6 h-6 text-white" />
+                <Menu className="w-6 h-6 text-gray-800" />
               </SheetTrigger>
-              <SheetContent className="bg-secondary/95 backdrop-blur-xl border-gray-800 p-0">
+              <SheetContent side="right" className="bg-secondary/95 backdrop-blur-xl border-gray-800 p-0">
+                <SheetTitle className="text-white font-medium text-xl">Menu</SheetTitle>
                 <div className="flex flex-col h-full">
                   <div className="border-b border-gray-800 p-5 flex items-center justify-between">
-                    <SheetTitle className="text-white font-medium text-xl">Menu</SheetTitle>
                     <X className="h-5 w-5 text-gray-400" />
                   </div>
                   
@@ -393,17 +329,17 @@ const Header = () => {
                           onClick={() => setOpenSolutionsMenu(!openSolutionsMenu)}
                           className="flex items-center justify-between w-full text-white hover:text-accent-gold font-medium text-xl group"
                         >
-                          <span>Solutions</span>
+                          <span>Services</span>
                           <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${openSolutionsMenu ? 'rotate-180' : ''}`} />
                         </button>
                         
                         <div className={`mt-2 pl-4 space-y-2 overflow-hidden transition-all duration-300 ${openSolutionsMenu ? 'max-h-96' : 'max-h-0'}`}>
                           <Link 
-                            href="/solutions"
+                            href="/services"
                             className="flex items-center gap-2 py-2 text-gray-300 hover:text-accent-gold transition-colors hover:translate-x-1 transition-transform font-medium"
                           >
-                            <ZapIcon className="w-4 h-4 text-primary-green" />
-                            <span>All Solutions</span>
+                            <Camera className="w-4 h-4 text-primary-green" />
+                            <span>All Services</span>
                           </Link>
                           {services.slice(1).map((service) => (
                             <Link 
@@ -418,27 +354,9 @@ const Header = () => {
                         </div>
                       </div>
                       
-                      <div className="py-3">
-                        <button 
-                          onClick={() => setOpenAboutMenu(!openAboutMenu)}
-                          className="flex items-center justify-between w-full text-white hover:text-accent-gold font-medium text-xl group"
-                        >
-                          <span>About Us</span>
-                          <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${openAboutMenu ? 'rotate-180' : ''}`} />
-                        </button>
-                        
-                        <div className={`mt-2 pl-4 space-y-2 overflow-hidden transition-all duration-300 ${openAboutMenu ? 'max-h-96' : 'max-h-0'}`}>
-                          {aboutSubmenu.map((item) => (
-                            <Link 
-                              key={item.href}
-                              href={item.href}
-                              className="block py-2 text-gray-300 hover:text-accent-gold transition-colors hover:translate-x-1 transition-transform"
-                            >
-                              {item.title}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
+                      <Link href="/about-us" className="block text-white hover:text-accent-gold font-medium text-xl hover:translate-x-1 transition-transform">
+                        About Us
+                      </Link>
                     </div>
                   </div>
 

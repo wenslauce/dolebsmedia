@@ -5,8 +5,8 @@ import Image from "next/image";
 import { FileText, Cookie, Bell, Settings, Info, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Cookie Policy | W. Giertsen Energy Solutions",
-  description: "Information about how W. Giertsen Energy Solutions uses cookies on our website.",
+  title: "Cookie Policy | Dolebs Media",
+  description: "Information about how Dolebs Media uses cookies on our website.",
 };
 
 export default function CookiePolicyPage() {
@@ -37,7 +37,7 @@ export default function CookiePolicyPage() {
                   Cookie Policy
                 </h1>
                 <p className="text-white/90 text-lg max-w-3xl">
-                  This Cookie Policy explains how W. Giertsen Energy Solutions uses cookies and similar technologies to recognize you when you visit our website.
+                  This Cookie Policy explains how Dolebs Media Limited uses cookies and similar technologies to recognize you when you visit our website and enhance your experience with our creative services.
                 </p>
                 <div className="flex items-center gap-2 mt-6 text-white/60">
                   <Clock className="h-4 w-4" />
@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
                     Introduction
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    This Cookie Policy explains how W. Giertsen Energy Solutions ("we", "us", or "our") uses cookies and similar technologies to recognize you when you visit our website at <Link href="/" className="text-primary hover:underline">giertsenenergy.com</Link> ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+                    This Cookie Policy explains how Dolebs Media Limited ("we", "us", or "our") uses cookies and similar technologies to recognize you when you visit our website at <Link href="/" className="text-primary hover:underline">dolebsmedia.co.ke</Link> ("Website"). It explains what these technologies are and why we use them to enhance your experience with our creative services, as well as your rights to control our use of them.
                   </p>
                   <p className="text-gray-700 mb-4">
                     In some cases, we may use cookies to collect personal information, or that becomes personal information if we combine it with other information.
@@ -77,7 +77,7 @@ export default function CookiePolicyPage() {
                     Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
                   </p>
                   <p className="text-gray-700 mb-4">
-                    Cookies set by the website owner (in this case, W. Giertsen Energy Solutions) are called "first party cookies". Cookies set by parties other than the website owner are called "third party cookies". Third party cookies enable third party features or functionality to be provided on or through the website (e.g. advertising, interactive content and analytics). The parties that set these third party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
+                    Cookies set by the website owner (in this case, Dolebs Media Limited) are called "first party cookies". Cookies set by parties other than the website owner are called "third party cookies". Third party cookies enable third party features or functionality to be provided on or through the website (e.g. advertising, interactive content and analytics). The parties that set these third party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
                   </p>
                 </section>
 
@@ -88,7 +88,7 @@ export default function CookiePolicyPage() {
                     Why We Use Cookies
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Website to operate, and we refer to these as "essential" or "necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Website for advertising, analytics and other purposes.
+                    We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Website to operate, and we refer to these as "essential" or "necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our website and better understand how to serve our creative services. Third parties serve cookies through our Website for advertising, analytics and other purposes.
                   </p>
                   <p className="text-gray-700">
                     The specific types of first and third party cookies served through our Website and the purposes they perform are described below.
@@ -204,7 +204,7 @@ export default function CookiePolicyPage() {
                     Some Internet browsers - like Internet Explorer, Firefox, and Safari - include the ability to transmit "Do Not Track" or "DNT" signals. Since uniform standards for "DNT" signals have not been adopted, our website does not currently process or respond to "DNT" signals.
                   </p>
                   <p className="text-gray-700">
-                    W. Giertsen Energy Solutions takes privacy and meaningful choice seriously and will make efforts to continue to monitor developments around DNT browser technology and the implementation of a standard.
+                    Dolebs Media Limited takes privacy and meaningful choice seriously and will make efforts to continue to monitor developments around DNT browser technology and the implementation of a standard.
                   </p>
                 </section>
 
@@ -226,10 +226,10 @@ export default function CookiePolicyPage() {
                     If you have any questions about our use of cookies or other technologies, please contact us at:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <p className="font-medium text-secondary mb-2">W. Giertsen Energy Solutions</p>
-                    <p className="text-gray-700">Email: energy@giertsen.no</p>
-                    <p className="text-gray-700">Phone: +254 742 487 867</p>
-                    <p className="text-gray-700">Address: Church Road No 90, Westlands, Nairobi, Kenya</p>
+                    <p className="font-medium text-secondary mb-2">Dolebs Media Limited</p>
+                    <p className="text-gray-700">Email: info@dolebsmedia.co.ke</p>
+                    <p className="text-gray-700">Phone: +254 798 740 674</p>
+                    <p className="text-gray-700">Address: Nairobi, Kenya</p>
                   </div>
                 </section>
               </div>

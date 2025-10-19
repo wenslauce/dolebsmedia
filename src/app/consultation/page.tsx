@@ -992,7 +992,7 @@ export default function ConsultationPage() {
                             <p className="font-medium">Something went wrong!</p>
                           </div>
                           <p className="mt-2 text-sm">
-                            {errorMessage || "Please try again or contact us directly at energy@giertsen.no"}
+                            {errorMessage || "Please try again or contact us directly at info@dolebsmedia.co.ke"}
                           </p>
                         </motion.div>
                       )}

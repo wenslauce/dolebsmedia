@@ -6,8 +6,8 @@ import MapEmbed from "./MapEmbed";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
-  title: "Contact W. Giertsen Energy Solutions | Get in Touch",
-  description: "Contact W. Giertsen Energy Solutions for sustainable energy solutions. Reach out to our team of experts for consultation and support.",
+  title: "Contact Dolebs Media | Get in Touch",
+  description: "Contact Dolebs Media for creative digital solutions. Reach out to our team of experts for photography, videography, and media services.",
 };
 
 interface OfficeLocation {
@@ -21,22 +21,9 @@ interface OfficeLocation {
 const officeLocations: OfficeLocation[] = [
   {
     city: "Nairobi",
-    address: ["Church Road No 90", "Westlands", "Kenya"],
-    phone: "+254 742 487 867",
-    email: "energy@giertsen.no"
-  },
-  {
-    city: "Norway",
-    address: ["Nygårdsviken 1", "5165 Laksevåg, Bergen", "Norway"],
-    phone: "+47 55 94 30 00",
-    email: "energy@giertsen.no",
-    isHQ: true
-  },
-  {
-    city: "Germany",
-    address: ["Robert-Bosch Straße 3", "64569 Nauheim", "Germany"],
-    phone: "+49 6152 9619 200",
-    email: "energy@giertsen.no"
+    address: ["Nairobi, Kenya"],
+    phone: "+2547 98 740 674",
+    email: "info@dolebsmedia.co.ke"
   }
 ];
 
@@ -50,7 +37,7 @@ export default function ContactPage() {
         <div className="relative h-[400px]">
           <Image
             src="/images/contact-hero.avif"
-            alt="Contact W. Giertsen Energy Solutions"
+            alt="Contact Dolebs Media"
             fill
             className="object-cover"
           />
@@ -61,7 +48,7 @@ export default function ContactPage() {
                   Contact Us
                 </h1>
                 <p className="text-white/80 text-lg">
-                  Get in touch with our team of energy experts
+                  Get in touch with our team of creative experts
                 </p>
               </div>
             </div>
@@ -77,7 +64,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-gray-700 mb-8">
                 Whether you have a question about our services, want to partner with us,
-                or are interested in a career at W. Giertsen Energy Solutions, we're here to help.
+                or are interested in a career at Dolebs Media, we're here to help.
               </p>
 
               <ContactForm />
@@ -85,13 +72,13 @@ export default function ContactPage() {
 
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6">
-                Our Offices
+                Our Office
               </h2>
               <div className="space-y-8">
                 {officeLocations.map((office) => (
                   <div key={office.city} className="bg-white p-6 rounded-lg shadow-md">
                     <h3 className="text-xl font-semibold text-secondary mb-4">
-                      {office.city} Office {office.isHQ && <span className="text-primary text-sm font-normal ml-2">(Headquarters)</span>}
+                      {office.city} Office
                     </h3>
                     <div className="space-y-4">
                       <div className="flex items-start">
@@ -121,17 +108,6 @@ export default function ContactPage() {
                           {office.email}
                         </a>
                       </div>
-                      {office.city === "Germany" && (
-                        <div className="flex items-center mt-4">
-                          <svg className="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                          </svg>
-                          <a href="https://giertsenenergy.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/90">
-                            giertsenenergy.de
-                          </a>
-                        </div>
-                      )}
                     </div>
                   </div>
                 ))}

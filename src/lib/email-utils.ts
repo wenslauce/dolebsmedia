@@ -5,7 +5,7 @@
 import { Resend } from "resend";
 
 // Verified email for testing (should match your Resend account email)
-export const VERIFIED_EMAIL = "energy@giertsen.no";
+export const VERIFIED_EMAIL = "info@dolebsmedia.co.ke";
 
 // Initialize Resend with API key
 let resendInstance: Resend | null = null;

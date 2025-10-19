@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
 
       // Generate Google Calendar link
       const meetingType = formData.meetingType === "phone" ? "Phone Call" : "In-person Meeting"
-      const title = `Solar Consultation - ${meetingType} with W. Giertsen Energy Solutions`
+      const title = `Solar Consultation - ${meetingType} with Dolebs Media`
       const description = `
         Solar Consultation regarding: ${selectedSolutions}
         
@@ -129,7 +129,7 @@ export async function POST(request: NextRequest) {
     console.log("Sending email to company")
     
     // Get company email recipients (taking into account testing limitations)
-    const companyIntendedEmail = "energy@giertsen.no";
+    const companyIntendedEmail = "info@dolebsmedia.co.ke";
     const companyEmail = getValidRecipientEmail(companyIntendedEmail);
     
     // Log info about testing mode if applicable
@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
     // Send email to company
     try {
       const { data, error } = await resend.emails.send({
-        from: "W. Giertsen Energy Solutions Solar Survey <onboarding@resend.dev>",
+        from: "Dolebs Media Solar Survey <onboarding@resend.dev>",
         to: [companyEmail],
         subject: "New Solar Solution Survey Submission",
         react: SurveyEmailTemplate({
@@ -173,7 +173,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to customer
     try {
       await resend.emails.send({
-        from: "W. Giertsen Energy Solutions <onboarding@resend.dev>",
+        from: "Dolebs Media <onboarding@resend.dev>",
         to: [customerEmail],
         subject: "Your Solar Solution Survey Confirmation",
         react: SurveyEmailTemplate({

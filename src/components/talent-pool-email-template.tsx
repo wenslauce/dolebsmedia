@@ -38,7 +38,7 @@ export const TalentPoolEmailTemplate = ({
               src="/images/logo.png"
               width="400"
               height="120"
-              alt="W. Giertsen Energy Solutions Logo"
+              alt="Dolebs Media Logo"
               style={logo}
             />
           </Section>
@@ -56,7 +56,7 @@ export const TalentPoolEmailTemplate = ({
               <Text style={paragraph}>
                 Dear {formData.firstName},<br />
                 <br />
-                Thank you for your interest in joining W. Giertsen Energy Solutions' talent pool. We've received your application
+                Thank you for your interest in joining Dolebs Media' talent pool. We've received your application
                 and will keep your information on file for future opportunities that match your profile.
               </Text>
             )}
@@ -138,7 +138,7 @@ export const TalentPoolEmailTemplate = ({
                   </Text>
 
                   <Text style={paragraph}>
-                    We appreciate your interest in W. Giertsen Energy Solutions and your passion for sustainable energy.
+                    We appreciate your interest in Dolebs Media and your passion for sustainable energy.
                   </Text>
                 </Section>
               </>
@@ -148,15 +148,15 @@ export const TalentPoolEmailTemplate = ({
           <Hr style={divider} />
 
           <Section style={footer}>
-            <Text style={footerText}>© 2025 W. Giertsen Energy Solutions. All rights reserved.</Text>
+            <Text style={footerText}>© 2025 Dolebs Media. All rights reserved.</Text>
             <Text style={footerText}>90 Church Rd, Nairobi, Kenya</Text>
             <Text style={footerText}>
-              <Link href="mailto:energy@giertsen.no" style={link}>
-                energy@giertsen.no
+              <Link href="mailto:info@dolebsmedia.co.ke" style={link}>
+                info@dolebsmedia.co.ke
               </Link>{" "}
               |{" "}
               <Link href="tel:+254796214350" style={link}>
-                +254 742 487 867
+                +254 798 740 674
               </Link>
             </Text>
           </Section>

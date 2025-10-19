@@ -103,7 +103,7 @@ const HeroSection = () => {
               transition: "opacity 0.8s ease-in-out"
             }}
           >
-            <source src="/video/giertsenloop.mp4" type="video/mp4" />
+            <source src="/video/dolebsloop.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -189,154 +189,98 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Enhanced Content with improved animations */}
-      <motion.div 
-        className="container-custom relative z-30 mt-16 text-center"
-        style={{ y: contentY, opacity: contentOpacity }}
-      >
-        <motion.h1 
-          className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-white mb-6"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          Harnessing the Sun,<br />
-          Energizing Kenya. 
-          <motion.span 
-            className="inline-block ml-2"
-            animate={{ rotate: [0, 5, 0, -5, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            ☀️
-          </motion.span><br />
-          <span className="text-white/90 bg-gradient-to-r from-white to-accent-gold bg-clip-text text-transparent">Revolutionizing Green Energy Solutions.</span>
-        </motion.h1>
-
-        <motion.div 
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onHoverStart={() => setIsHoveredCta(true)}
-            onHoverEnd={() => setIsHoveredCta(false)}
-            className="relative overflow-hidden rounded-md"
-          >
-            <Link
-              href="/contact"
-              className="group relative flex items-center gap-2 bg-gradient-to-r from-primary to-primary/90 text-white px-6 py-4 rounded-md font-medium transition-all duration-300 overflow-hidden z-10"
-            >
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-accent-gold to-accent-gold/90 z-0"
-                initial={{ x: '-100%' }}
-                animate={{ x: isHoveredCta ? 0 : '-100%' }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.span 
-                className="relative z-10"
-                initial={{ x: 0 }}
-                whileHover={{ x: -4 }}
-                transition={{ duration: 0.3 }}
-              >
-                Get Quote
-              </motion.span>
-              <motion.div
-                className="relative z-10"
-                initial={{ x: 0, opacity: 1 }}
-                whileHover={{ x: 4, opacity: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image src="/images/arrow-icon.svg" alt="Arrow" width={20} height={20} />
-              </motion.div>
-            </Link>
-            <motion.div 
-              className="absolute -inset-1 rounded-lg bg-gradient-to-r from-primary-green to-accent-gold opacity-30 blur-lg"
-              animate={{ opacity: isHoveredCta ? [0.3, 0.6, 0.3] : 0 }}
-              transition={{ duration: 1.5, repeat: isHoveredCta ? Infinity : 0 }}
-            />
-          </motion.div>
-
+      {/* New Content Layout - Dolebs Studio Style */}
+      <div className="absolute inset-0 z-30 flex items-center justify-center">
+        <div className="w-full h-full relative">
+          {/* Brand Name - Bottom Left */}
           <motion.div 
-            className="hidden md:block text-white text-lg backdrop-blur-sm bg-white/5 px-5 py-3 rounded-lg border border-white/10 relative overflow-hidden group"
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="absolute bottom-20 left-8 md:left-16 z-40"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <motion.div 
-              className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0"
-              initial={{ x: '-100%' }}
-              animate={{ 
-                x: ['100%', '-100%']
-              }}
-              transition={{ 
-                duration: 2,
-                ease: "linear",
-                repeat: Infinity,
-                repeatType: "loop"
-              }}
-            />
-            Scalable, smart solar for residential and commercial success.
-          </motion.div>
-        </motion.div>
-
-        <motion.div 
-          className="mt-20 md:mt-28"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6">
-            Solar Power With <span className="text-accent-gold relative">
-              Advanced Supercapacitor Storage
-              <motion.div 
-                className="absolute -bottom-2 left-0 right-0 h-0.5 bg-accent-gold/50"
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 1 }}
-              />
-            </span>
-          </h2>
-
-          <div className="flex justify-center mt-8">
-            <motion.button
-              onClick={() => {
-                const statsSection = document.querySelector(".section-wrapper:nth-child(3)");
-                if (statsSection) {
-                  statsSection.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className="text-white flex flex-col items-center gap-1 hover:text-accent-gold transition-colors"
-              whileHover={{ y: 5 }}
-              transition={{ duration: 0.3 }}
-            >
-              <span>Scroll</span>
-              <motion.div
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20"
-                animate={{ y: [0, 5, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            <div className="text-white">
+              <motion.h1 
+                className="text-6xl md:text-8xl lg:text-9xl font-bold leading-none"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
               >
-                <motion.svg 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg"
-                  animate={{ y: [0, 2, 0] }}
-                  transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  <path d="M12 5V19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M19 12L12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </motion.svg>
-              </motion.div>
-            </motion.button>
-          </div>
-        </motion.div>
+                Dolebs
+              </motion.h1>
+              <motion.h2 
+                className="text-3xl md:text-4xl lg:text-5xl font-light opacity-80 mt-2"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 0.8, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+              >
+                Studio
+              </motion.h2>
+            </div>
+          </motion.div>
 
-        <div className="absolute bottom-10 left-0 right-0 text-center text-white/70 text-sm">
+          {/* Contact Card - Mid Right */}
+          <motion.div 
+            className="absolute top-1/2 right-8 md:right-16 transform -translate-y-1/2 z-40"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-white/30 max-w-sm relative overflow-hidden">
+              {/* Liquid glass overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/5 to-white/10 rounded-2xl"></div>
+              {/* Glass reflection effect */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+              {/* Content container */}
+              <div className="relative z-10">
+                <div className="flex items-center gap-4">
+                  {/* Profile Picture - Man with reddish hair holding plant */}
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/40">
+                    <div className="w-full h-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center relative">
+                      {/* Simplified representation of man with plant */}
+                      <div className="relative">
+                        <div className="w-8 h-8 rounded-full bg-amber-600/20 mb-1"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-500/60 absolute -bottom-1 -right-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <p className="text-xs font-medium text-white/80 uppercase tracking-wide">Creative Director</p>
+                    <h3 className="text-lg font-bold text-white">Director Mark</h3>
+                  </div>
+                </div>
+                
+                <div className="mt-4 pt-4 border-t border-white/20">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                      </svg>
+                    </div>
+                    <span className="text-white font-medium">LET'S TALK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Marketing Tagline - Bottom Right */}
+          <motion.div 
+            className="absolute bottom-20 right-8 md:right-16 z-40 max-w-md text-right"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+          >
+            <div className="text-white space-y-1">
+              <p className="text-lg font-semibold">No cookie-cutter websites. No fluff.</p>
+              <p className="text-lg font-medium">Just real tools and smart strategies to grow your</p>
+              <p className="text-lg font-medium">business and elevate your brand.</p>
+            </div>
+          </motion.div>
+
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

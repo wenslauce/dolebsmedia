@@ -5,8 +5,8 @@ import Image from "next/image";
 import { FileText, Scale, Globe, AlertTriangle, Award, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Service | W. Giertsen Energy Solutions",
-  description: "Terms and conditions for using W. Giertsen Energy Solutions services and website.",
+  title: "Terms of Service | Dolebs Media",
+  description: "Terms and conditions for using Dolebs Media services and website.",
 };
 
 export default function TermsOfServicePage() {
@@ -37,7 +37,7 @@ export default function TermsOfServicePage() {
                   Terms of Service
                 </h1>
                 <p className="text-white/90 text-lg max-w-3xl">
-                  These terms and conditions outline the rules and regulations for the use of W. Giertsen Energy Solutions' website and services.
+                  These terms and conditions outline the rules and regulations for the use of Dolebs Media Limited's website and creative services including photography, videography, communications, marketing & PR, graphic design, and web development.
                 </p>
                 <div className="flex items-center gap-2 mt-6 text-white/60">
                   <Clock className="h-4 w-4" />
@@ -60,10 +60,10 @@ export default function TermsOfServicePage() {
                     Introduction
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use W. Giertsen Energy Solutions' website if you do not accept all of the terms and conditions stated on this page.
+                    By accessing this website or engaging our creative services, we assume you accept these terms and conditions in full. Do not continue to use Dolebs Media Limited's website or services if you do not accept all of the terms and conditions stated on this page.
                   </p>
                   <p className="text-gray-700">
-                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: "Client", "You" and "Your" refers to you, the person accessing this website and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to W. Giertsen Energy Solutions. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves.
+                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: "Client", "You" and "Your" refers to you, the person or entity accessing this website and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to Dolebs Media Limited. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves.
                   </p>
                 </section>
 
@@ -101,17 +101,20 @@ export default function TermsOfServicePage() {
                   </p>
                 </section>
 
-                {/* Services and Products */}
+                {/* Creative Services */}
                 <section>
-                  <h2 className="text-2xl font-semibold text-secondary mb-4">Services and Products</h2>
+                  <h2 className="text-2xl font-semibold text-secondary mb-4">Creative Services</h2>
                   <p className="text-gray-700 mb-4">
-                    All services and products displayed on this website are subject to availability. We reserve the right to discontinue any service or product at any time.
+                    All creative services including photography, videography, communications, marketing & PR, graphic design, and web development displayed on this website are subject to availability and our capacity to deliver quality results. We reserve the right to discontinue any service or modify our service offerings at any time.
                   </p>
                   <p className="text-gray-700 mb-4">
-                    Prices for our products and services are subject to change without notice. We reserve the right at any time to modify or discontinue any service or product without notice.
+                    Prices for our creative services are subject to change without notice. We reserve the right at any time to modify or discontinue any service offering without notice. All pricing is based on project scope, complexity, and timeline requirements.
+                  </p>
+                  <p className="text-gray-700 mb-4">
+                    We shall not be liable to you or to any third-party for any modification, price change, suspension, or discontinuance of any creative service. All creative work is subject to client approval and may require revisions as outlined in individual project agreements.
                   </p>
                   <p className="text-gray-700">
-                    We shall not be liable to you or to any third-party for any modification, price change, suspension, or discontinuance of any service or product.
+                    Intellectual property rights for all creative work remain with Dolebs Media Limited unless otherwise specified in writing. Clients receive usage rights as outlined in individual project agreements.
                   </p>
                 </section>
 
@@ -133,7 +136,7 @@ export default function TermsOfServicePage() {
                     Limitations of Liability
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    In no event shall W. Giertsen Energy Solutions, nor any of its officers, directors, and employees, be liable to you for anything arising out of or in any way connected with your use of this website, whether such liability is under contract, tort, or otherwise, and W. Giertsen Energy Solutions, including its officers, directors, and employees shall not be liable for any indirect, consequential, or special liability arising out of or in any way related to your use of this website.
+                    In no event shall Dolebs Media Limited, nor any of its officers, directors, and employees, be liable to you for anything arising out of or in any way connected with your use of this website or our creative services, whether such liability is under contract, tort, or otherwise, and Dolebs Media Limited, including its officers, directors, and employees shall not be liable for any indirect, consequential, or special liability arising out of or in any way related to your use of this website or our creative services.
                   </p>
                   <p className="text-gray-700">
                     To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).
@@ -152,10 +155,10 @@ export default function TermsOfServicePage() {
                 <section>
                   <h2 className="text-2xl font-semibold text-secondary mb-4">Indemnification</h2>
                   <p className="text-gray-700 mb-4">
-                    You agree to indemnify, defend and hold harmless W. Giertsen Energy Solutions, its officers, directors, employees, agents and third parties, for any losses, costs, liabilities and expenses (including reasonable attorney's fees) relating to or arising out of your use of or inability to use the site or services, any user postings made by you, your violation of any terms of this Agreement or your violation of any rights of a third party, or your violation of any applicable laws, rules or regulations.
+                    You agree to indemnify, defend and hold harmless Dolebs Media Limited, its officers, directors, employees, agents and third parties, for any losses, costs, liabilities and expenses (including reasonable attorney's fees) relating to or arising out of your use of or inability to use the site or our creative services, any user postings made by you, your violation of any terms of this Agreement or your violation of any rights of a third party, or your violation of any applicable laws, rules or regulations.
                   </p>
                   <p className="text-gray-700">
-                    W. Giertsen Energy Solutions reserves the right, at its own cost, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with W. Giertsen Energy Solutions in asserting any available defenses.
+                    Dolebs Media Limited reserves the right, at its own cost, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with Dolebs Media Limited in asserting any available defenses.
                   </p>
                 </section>
 
@@ -177,10 +180,10 @@ export default function TermsOfServicePage() {
                     Questions about the Terms of Service should be sent to us at:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <p className="font-medium text-secondary mb-2">W. Giertsen Energy Solutions</p>
-                    <p className="text-gray-700">Email: energy@giertsen.no</p>
-                    <p className="text-gray-700">Phone: +254 742 487 867</p>
-                    <p className="text-gray-700">Address: Church Road No 90, Westlands, Nairobi, Kenya</p>
+                    <p className="font-medium text-secondary mb-2">Dolebs Media Limited</p>
+                    <p className="text-gray-700">Email: info@dolebsmedia.co.ke</p>
+                    <p className="text-gray-700">Phone: +254 798 740 674</p>
+                    <p className="text-gray-700">Address: Nairobi, Kenya</p>
                   </div>
                 </section>
               </div>

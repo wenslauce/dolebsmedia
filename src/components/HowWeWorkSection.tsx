@@ -1,40 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ClipboardCheck, FileSearch, Handshake, Truck, Wrench, BookOpen, ArrowRight } from "lucide-react";
-
-const steps = [
-  {
-    title: "Initial Consultation",
-    description: "We begin by understanding your energy needs, operational context, and site conditions.",
-    icon: <ClipboardCheck className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Site Assessment & Technical Design",
-    description: "Our team conducts a site visit (where possible) or reviews site-specific data to create a custom solar solution tailored to your environment and usage requirements.",
-    icon: <FileSearch className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Proposal & Agreement",
-    description: "We present a detailed technical and financial proposal, along with system specifications and delivery timelines.",
-    icon: <Handshake className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Procurement & Logistics",
-    description: "With operations based in Nairobi and international supply networks, we handle equipment sourcing and transport — whether local delivery or regional deployment to hard-to-reach areas.",
-    icon: <Truck className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Installation & Commissioning",
-    description: "Our trained technicians and trusted partners install and commission the system, ensuring full functionality and safety.",
-    icon: <Wrench className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Training & Support",
-    description: "We provide basic user training and ongoing technical support to ensure proper system usage, maintenance, and sustainability.",
-    icon: <BookOpen className="h-6 w-6 text-primary" />
-  }
-];
+import { Users, Heart } from "lucide-react";
 
 export default function HowWeWorkSection() {
   return (
@@ -44,10 +11,10 @@ export default function HowWeWorkSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/5 border border-red-600/10 mb-6"
         >
-          <ArrowRight className="h-4 w-4 text-primary" />
-          <span className="text-sm font-medium text-secondary">Our Process</span>
+          <Users className="h-4 w-4 text-red-600" />
+          <span className="text-sm font-medium text-secondary">Our Approach</span>
         </motion.div>
 
         <motion.h2 
@@ -56,8 +23,8 @@ export default function HowWeWorkSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          How We Work
-          <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-accent-gold"></div>
+          Our Approach
+          <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-red-600"></div>
         </motion.h2>
 
         <motion.p 
@@ -67,69 +34,25 @@ export default function HowWeWorkSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          At W. Giertsen Energy Solutions, we follow a practical, step-by-step approach to ensure that every solar project — whether humanitarian, commercial, or institutional — is delivered efficiently, safely, and with long-term performance in mind.
+          We foster a collaborative environment where every team member contributes their unique skills and insights. By working closely together, we create cohesive and impactful visual content that captures your brand's essence and engages your audience effectively.
         </motion.p>
       </div>
 
-      <div className="relative">
-        <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 transform -translate-y-1/2 z-0"></div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.title}
-              className="group bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-primary/20 transition-all duration-300 relative"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-semibold">
-                {index + 1}
-              </div>
-
-              <motion.div 
-                className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.5 }}
-              >
-                {step.icon}
-              </motion.div>
-
-              <h3 className="text-xl font-semibold text-secondary mb-4 group-hover:text-primary transition-colors duration-300">
-                {step.title}
-              </h3>
-
-              <p className="text-gray-600">
-                {step.description}
-              </p>
-
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
-                  <motion.div
-                    initial={{ x: -10, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 + 0.5 }}
-                  >
-                    <ArrowRight className="h-6 w-6 text-primary/40" />
-                  </motion.div>
-                </div>
-              )}
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
       <motion.div 
-        className="mt-20 text-center max-w-3xl mx-auto bg-gradient-to-r from-primary/5 via-transparent to-primary/5 rounded-2xl p-8"
+        className="max-w-4xl mx-auto bg-gradient-to-r from-red-600/5 via-transparent to-red-600/5 rounded-2xl p-8"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.2 }}
       >
-        <p className="text-gray-600 text-lg">
-          This workflow allows us to deliver high-quality energy solutions — on time, on budget, and built for long-term performance in even the most demanding conditions.
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="w-16 h-16 rounded-full bg-red-600/10 flex items-center justify-center">
+            <Heart className="h-8 w-8 text-red-600" />
+          </div>
+        </div>
+        
+        <p className="text-gray-700 text-lg text-center leading-relaxed">
+          Our team's commitment to creativity, professionalism, and client satisfaction drives everything we do. We believe in building lasting partnerships through transparent communication, innovative solutions, and exceptional results that exceed your expectations.
         </p>
       </motion.div>
     </div>

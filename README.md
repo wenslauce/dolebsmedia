@@ -1,6 +1,6 @@
-# W. Giertsen Energy Solutions Website
+# Dolebs Media Website
 
-This is the website for W. Giertsen Energy Solutions, a company providing solar energy solutions in Kenya.
+This is the website for Dolebs Media, a company providing solar energy solutions in Kenya.
 
 ## Getting Started
 
@@ -108,4 +108,4 @@ This error occurs when using Resend's free tier without a verified domain. To fi
 
 ## License
 
-All rights reserved, W. Giertsen Energy Solutions. 
+All rights reserved, Dolebs Media. 

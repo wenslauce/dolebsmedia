@@ -38,29 +38,26 @@ const config = {
   			ring: 'hsl(var(--ring))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))',
-  				green: '#006939'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))',
-  				black: '#000000'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))',
-  				gold: '#ffcf62'
-  			},
+			primary: {
+				DEFAULT: '#E31E24',
+				foreground: '#FFFFFF'
+			},
+			secondary: {
+				DEFAULT: '#111111',
+				foreground: '#FFFFFF'
+			},
+			destructive: {
+				DEFAULT: 'hsl(var(--destructive))',
+				foreground: 'hsl(var(--destructive-foreground))'
+			},
+			muted: {
+				DEFAULT: '#F5F5F5',
+				foreground: '#444444'
+			},
+			accent: {
+				DEFAULT: '#FFC43D',
+				foreground: '#111111'
+			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'

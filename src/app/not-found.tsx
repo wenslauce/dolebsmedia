@@ -24,7 +24,7 @@ export default function NotFound() {
           <div className="relative z-10 flex flex-col items-center text-center">
             <Image 
               src="/images/logo.png" 
-              alt="W. Giertsen Energy Solutions" 
+              alt="Dolebs Media" 
               width={180} 
               height={60} 
               className="mb-8" 

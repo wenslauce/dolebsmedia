@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import CustomerReferencesClient from "./CustomerReferencesClient";
 
 export const metadata: Metadata = {
-  title: "Customer References | W. Giertsen Energy Solutions",
+  title: "Customer References | Dolebs Media",
   description: "Explore real-world examples and success stories of our energy solutions in action across Africa.",
 };
 

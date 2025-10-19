@@ -285,7 +285,7 @@ export const AdminNotificationEmail = ({
           
           <Section style={footer}>
             <Text style={footerText}>
-              © {new Date().getFullYear()} Giertsen Energy Solutions. All rights reserved.
+              © {new Date().getFullYear()} Dolebs Media. All rights reserved.
             </Text>
             <Text style={footerText}>
               This is an automated notification. Please do not reply to this email.

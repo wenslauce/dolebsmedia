@@ -63,7 +63,7 @@ export default function ThankYouScreen({ formData }: ThankYouScreenProps) {
 
         // Generate Google Calendar link
         const meetingType = formData.meetingType === "phone" ? "Phone Call" : "In-person Meeting"
-        const title = `Solar Consultation - ${meetingType} with W. Giertsen Energy Solutions`
+        const title = `Solar Consultation - ${meetingType} with Dolebs Media`
         const description = `
           Solar Consultation regarding: ${selectedSolutions}
           

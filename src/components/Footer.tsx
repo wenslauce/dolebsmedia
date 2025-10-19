@@ -9,19 +9,18 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const solutionsLinks = [
-    { href: "/solutions/supercapacitor-energy-storage", label: "Supercapacitor Energy Storage" },
-    { href: "/solutions/residential-solutions", label: "Residential Solutions" },
-    { href: "/solutions/commercial-solutions", label: "Commercial Solutions" },
-    { href: "/solutions/humanitarian-solutions", label: "Humanitarian Solutions" },
-    { href: "/solutions/solar-operations-maintenance", label: "Solar Operations & Maintenance" }
+    { href: "/services/photography", label: "Photography" },
+    { href: "/services/videography", label: "Videography" },
+    { href: "/services/communications", label: "Communications" },
+    { href: "/services/marketing-pr", label: "Marketing & PR" },
+    { href: "/services/graphic-designing", label: "Graphic Designing" },
+    { href: "/services/web-development-hosting", label: "Web Development & Hosting" }
   ];
 
   const companyLinks = [
     { href: "/about-us", label: "About Us" },
-    { href: "/our-team", label: "Our Team" },
-    { href: "/about-us/customer-references", label: "Customer References" },
-    { href: "/sustainability-policy", label: "Sustainability" },
-    { href: "/careers", label: "Careers" }
+    { href: "/testimonials", label: "Testimonials" },
+    { href: "/career", label: "Career" }
   ];
 
   const legalLinks = [
@@ -31,9 +30,9 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/company/w-giertsen-energy-solutions-as", label: "LinkedIn" },
-    { icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/wgiertsenenergy/", label: "Instagram" },
-    { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/W. Giertsen Energy SolutionsGiertsen/", label: "Facebook" }
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/company/dolebs-media", label: "LinkedIn" },
+    { icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/dolebsmedia/", label: "Instagram" },
+    { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/dolebsmedia/", label: "Facebook" }
   ];
 
   const fadeInUpVariants = {
@@ -65,28 +64,28 @@ export function Footer() {
             <Link href="/" className="inline-block mb-6">
               <Image 
                 src="/images/logo-white.png" 
-                alt="W.Giertsen Energy Solutions Logo" 
-                width={180} 
-                height={60}
-                className="h-12 w-auto"
+                alt="Dolebs Media Logo" 
+                width={120} 
+                height={40}
+                className="h-8 w-auto"
               />
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Leading supplier of innovative solar power solutions with advanced supercapacitor technology, delivering sustainable energy across Kenya.
+              Passionate about bringing your vision to life through exceptional imagery and videography. Specializing in high-quality commercial photography, videography, and creative digital solutions.
             </p>
             
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent-gold mt-0.5" />
-                <p className="text-gray-300">Church Road No 90, Westlands-Nairobi</p>
+                <p className="text-gray-300">Nairobi, Kenya</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent-gold" />
-                <p className="text-gray-300">+254 742 487 867</p>
+                <p className="text-gray-300">+254 798 740 674</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent-gold" />
-                <p className="text-gray-300">energy@giertsen.no</p>
+                <p className="text-gray-300">info@dolebsmedia.co.ke</p>
               </div>
             </div>
             
@@ -115,7 +114,7 @@ export function Footer() {
             transition={{ delay: 0.1 }}
           >
             <h3 className="text-xl font-semibold mb-6 text-white">
-              <span className="border-b-2 border-accent-gold pb-1">Solutions</span>
+              <span className="border-b-2 border-accent-gold pb-1">Services</span>
             </h3>
             <ul className="space-y-3">
               {solutionsLinks.map((link, index) => (
@@ -197,10 +196,10 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-gradient-to-r from-primary/20 via-accent-gold/20 to-primary/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-200 text-sm">
-              © {currentYear} W.Giertsen Energy Solutions. All rights reserved.
+              © {currentYear} Dolebs Media. All rights reserved.
             </p>
             <p className="text-gray-200 text-sm">
-              Designed and developed by <span className="text-accent-gold">Xperts Africa</span> for a sustainable future
+              Designed and developed by <span className="text-accent-gold">Xperts Africa</span>
             </p>
           </div>
         </div>

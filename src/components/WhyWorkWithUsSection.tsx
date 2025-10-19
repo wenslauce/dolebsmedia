@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { BatteryCharging, Zap, Award, Clock, ShieldCheck, Settings } from "lucide-react";
+import { Palette, Award, Star, Users, Camera, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
@@ -22,10 +22,10 @@ const FeatureCard = ({ title, description, icon, index, accentColor }: FeatureCa
       viewport={{ once: true, amount: 0.2 }}
       className="relative flex flex-col h-full"
     >
-      <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/30 h-full">
+      <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-600/5 hover:border-red-600/30 h-full">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/5 group-hover:to-primary/10 transition-all duration-700" />
-          <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-transparent via-transparent to-accent-gold/5 group-hover:to-accent-gold/10 transition-all duration-700" />
+          <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-transparent via-transparent to-red-600/5 group-hover:to-red-600/10 transition-all duration-700" />
+          <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-tr from-transparent via-transparent to-red-600/5 group-hover:to-red-600/10 transition-all duration-700" />
         </div>
 
         <div className="relative flex flex-col z-10 h-full">
@@ -52,42 +52,48 @@ const FeatureCard = ({ title, description, icon, index, accentColor }: FeatureCa
 export function WhyWorkWithUsSection() {
   const features = [
     {
-      title: "Rapid Deployment Advantage",
-      description: "With full stock maintained in Nairobi, we deploy complete systems within days, not months - no waiting for overseas shipments.",
-      icon: <Zap size={24} />,
-      accentColor: "primary"
+      title: "Creativity",
+      description: "We approach every project with a fresh perspective, ensuring unique and visually striking results that stand out. Our creative team brings innovative ideas and artistic vision to every assignment.",
+      icon: <Palette size={24} />,
+      accentColor: "red-600"
     },
     {
-      title: "Expert Local Support",
-      description: "24-hour response time with Kenya's most experienced solar team, providing peace of mind and minimizing costly downtime.",
-      icon: <ShieldCheck size={24} />,
-      accentColor: "accent-gold"
-    },
-    {
-      title: "Proven Across Sectors",
-      description: "Transforming energy reliability for Kenya's hospitality industry, religious facilities, and residential communities with specialized solutions.",
+      title: "Professionalism",
+      description: "Our team is dedicated to providing a seamless experience, from initial consultation to final delivery, with attention to detail and respect for deadlines. We maintain the highest standards of professional conduct.",
       icon: <Award size={24} />,
-      accentColor: "primary-green"
+      accentColor: "red-600"
     },
     {
-      title: "Tested in Extreme Conditions",
-      description: "Successfully deployed high-voltage systems in challenging environments like South Sudan for ICRC, demonstrating our technology's exceptional durability.",
-      icon: <Settings size={24} />,
-      accentColor: "primary"
+      title: "Quality",
+      description: "Utilizing state-of-the-art equipment and techniques, we produce high-resolution images and videos that meet the highest standards of quality. Every project receives meticulous attention to detail.",
+      icon: <Star size={24} />,
+      accentColor: "red-600"
     },
     {
-      title: "Real Performance Data",
-      description: "Our supercapacitor systems reduce generator runtime by up to 85% - Mara Bush Camp went from 7 hours daily generator use to just 1 hour or none at all.",
-      icon: <BatteryCharging size={24} />,
-      accentColor: "accent-gold"
+      title: "Customer-Centric Approach",
+      description: "We work closely with our clients to understand their needs and deliver tailored solutions that exceed expectations. Your vision becomes our mission, and your success is our priority.",
+      icon: <Users size={24} />,
+      accentColor: "red-600"
+    },
+    {
+      title: "Cutting-Edge Technology",
+      description: "We utilize the latest equipment and technology to capture and produce high-resolution images and videos. This commitment to staying at the forefront of industry advancements allows us to deliver visually stunning and technically superior content.",
+      icon: <Camera size={24} />,
+      accentColor: "red-600"
+    },
+    {
+      title: "Passion for Excellence",
+      description: "Our passion for visual storytelling drives us to continually push the boundaries of creativity and innovation. We are dedicated to delivering work that not only meets but exceeds your expectations, leaving a lasting impression on your audience.",
+      icon: <Heart size={24} />,
+      accentColor: "red-600"
     }
   ];
 
   return (
     <section className="py-16 md:py-24 bg-white relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-3xl opacity-60" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-accent-gold/5 to-transparent rounded-full blur-3xl opacity-60" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-red-600/5 to-transparent rounded-full blur-3xl opacity-60" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-red-600/5 to-transparent rounded-full blur-3xl opacity-60" />
       
       <div className="container-custom relative z-10">
         <motion.div
@@ -97,16 +103,16 @@ export function WhyWorkWithUsSection() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 mb-6">
-            <Award className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-secondary">Why Work With Us</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/5 border border-red-600/10 mb-6">
+            <Award className="h-4 w-4 text-red-600" />
+            <span className="text-sm font-medium text-secondary">Why Choose Us</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary mb-6">Powering Kenya's Future, Together</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary mb-6">Excellence in Every Frame</h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
-          Choose W. Giertsen for solar solutions with proven results and exceptional reliability across Kenya.
+            Choose Dolebs Media for creative solutions that transform your brand and captivate your audience with exceptional quality and innovative approach.
           </p>
-          <div className="mt-6 h-1 w-20 bg-gradient-to-r from-primary to-accent-gold rounded-full mx-auto" />
+          <div className="mt-6 h-1 w-20 bg-gradient-to-r from-red-600 to-red-600 rounded-full mx-auto" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

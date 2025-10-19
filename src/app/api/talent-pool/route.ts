@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
     // Send email to company
     try {
       const { data, error } = await resend.emails.send({
-        from: "W. Giertsen Energy Solutions Talent Pool <onboarding@resend.dev>",
+        from: "Dolebs Media Talent Pool <onboarding@resend.dev>",
         to: [companyEmail],
         subject: "New Talent Pool Application",
         react: TalentPoolEmailTemplate({
@@ -94,7 +94,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to applicant
     try {
       await resend.emails.send({
-        from: "W. Giertsen Energy Solutions <onboarding@resend.dev>",
+        from: "Dolebs Media <onboarding@resend.dev>",
         to: [applicantEmail],
         subject: "Your Talent Pool Application Confirmation",
         react: TalentPoolEmailTemplate({

@@ -19,7 +19,7 @@ export const ContactEmailTemplate = ({
   const fullName = `${formData.firstName} ${formData.lastName}`;
   const previewText = isCompanyEmail
     ? `New contact form submission from ${fullName}`
-    : "Thank you for contacting W. Giertsen Energy Solutions!";
+    : "Thank you for contacting Dolebs Media!";
 
   return (
     <Html>
@@ -32,7 +32,7 @@ export const ContactEmailTemplate = ({
               src="/images/logo.png"
               width="400"
               height="120"
-              alt="W. Giertsen Energy Solutions Logo"
+              alt="Dolebs Media Logo"
               style={logo}
             />
           </Section>
@@ -50,7 +50,7 @@ export const ContactEmailTemplate = ({
               <Text style={paragraph}>
                 Dear {formData.firstName},<br />
                 <br />
-                Thank you for reaching out to W. Giertsen Energy Solutions. We've received your message
+                Thank you for reaching out to Dolebs Media. We've received your message
                 and will get back to you as soon as possible.
               </Text>
             )}
@@ -105,7 +105,7 @@ export const ContactEmailTemplate = ({
                   </Text>
 
                   <Text style={paragraph}>
-                    We appreciate your interest in W. Giertsen Energy Solutions and look forward to assisting you.
+                    We appreciate your interest in Dolebs Media and look forward to assisting you.
                   </Text>
                 </Section>
               </>
@@ -115,15 +115,15 @@ export const ContactEmailTemplate = ({
           <Hr style={divider} />
 
           <Section style={footer}>
-            <Text style={footerText}>© 2025 W. Giertsen Energy Solutions. All rights reserved.</Text>
+            <Text style={footerText}>© 2025 Dolebs Media. All rights reserved.</Text>
             <Text style={footerText}>90 Church Rd, Nairobi, Kenya</Text>
             <Text style={footerText}>
-              <Link href="mailto:energy@giertsen.no" style={link}>
-                energy@giertsen.no
+              <Link href="mailto:info@dolebsmedia.co.ke" style={link}>
+                info@dolebsmedia.co.ke
               </Link>{" "}
               |{" "}
               <Link href="tel:+254796214350" style={link}>
-                +254 742 487 867
+                +254 798 740 674
               </Link>
             </Text>
           </Section>
