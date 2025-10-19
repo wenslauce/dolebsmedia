@@ -28,6 +28,7 @@ export async function submitContactForm(formData: ContactFormData) {
     await resend.emails.send({
       from: "Dolebs Media <info@dolebsmedia.co.ke>",
       to: "info@dolebsmedia.co.ke",
+      replyTo: validatedData.email,
       subject: `New Contact Form Submission: ${validatedData.subject}`,
       react: ContactEmailTemplate({ formData: validatedData, isCompanyEmail: true }),
     });

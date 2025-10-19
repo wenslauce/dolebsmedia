@@ -116,7 +116,7 @@ export const ContactEmailTemplate = ({
 
           <Section style={footer}>
             <Text style={footerText}>© 2025 Dolebs Media. All rights reserved.</Text>
-            <Text style={footerText}>90 Church Rd, Nairobi, Kenya</Text>
+            <Text style={footerText}>Nairobi, Kenya</Text>
             <Text style={footerText}>
               <Link href="mailto:info@dolebsmedia.co.ke" style={link}>
                 info@dolebsmedia.co.ke

@@ -62,6 +62,7 @@ export async function POST(request: NextRequest) {
       const { data, error } = await resend.emails.send({
         from: "Dolebs Media Talent Pool <onboarding@resend.dev>",
         to: [companyEmail],
+        replyTo: formData.email,
         subject: "New Talent Pool Application",
         react: TalentPoolEmailTemplate({
           formData,

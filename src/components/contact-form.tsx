@@ -4,12 +4,13 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Loader2 } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Loader2, CheckCircle, XCircle } from "lucide-react";
 import { submitContactForm, type ContactFormData } from "@/app/actions/contact";
 
 const contactFormSchema = z.object({
@@ -23,6 +24,7 @@ const contactFormSchema = z.object({
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     success?: boolean;
     message?: string;
@@ -49,7 +51,15 @@ export function ContactForm() {
       });
 
       if (result.success) {
+        setIsSubmitted(true);
         reset();
+        // Scroll to success message
+        setTimeout(() => {
+          document.getElementById('contact-form-status')?.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'center' 
+          });
+        }, 100);
       }
     } catch (error) {
       setSubmitStatus({
@@ -60,6 +70,48 @@ export function ContactForm() {
       setIsSubmitting(false);
     }
   };
+
+  const handleNewMessage = () => {
+    setIsSubmitted(false);
+    setSubmitStatus({});
+  };
+
+  // Show success state
+  if (isSubmitted && submitStatus.success) {
+    return (
+      <div className="text-center py-8" id="contact-form-status">
+        <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100">
+          <CheckCircle className="h-8 w-8 text-green-600" />
+        </div>
+        <h3 className="text-2xl font-semibold text-secondary mb-4">
+          Message Sent Successfully!
+        </h3>
+        <p className="text-gray-700 mb-6 max-w-md mx-auto">
+          Thank you for contacting Dolebs Media. We've received your message and will get back to you as soon as possible.
+        </p>
+        <div className="bg-primary/5 border border-primary/10 rounded-lg p-4 mb-6 max-w-md mx-auto">
+          <p className="text-sm text-gray-600">
+            <strong className="text-secondary">What's Next?</strong><br />
+            Our team will review your message and respond within 24 hours. You'll receive a confirmation email shortly.
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Button 
+            onClick={handleNewMessage}
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-white"
+          >
+            Send Another Message
+          </Button>
+          <Link href="/services" className="inline-block">
+            <Button variant="outline">
+              View Our Services
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -140,22 +192,42 @@ export function ContactForm() {
         )}
       </div>
 
-      {submitStatus.message && (
-        <Alert variant={submitStatus.success ? "default" : "destructive"}>
-          <AlertDescription>{submitStatus.message}</AlertDescription>
+      {submitStatus.message && !submitStatus.success && (
+        <Alert variant="destructive" id="contact-form-status" className="border-red-200 bg-red-50">
+          <div className="flex items-start gap-3">
+            <XCircle className="h-5 w-5 text-red-600 mt-0.5" />
+            <div>
+              <AlertTitle className="text-red-900 font-semibold mb-1">
+                Error Sending Message
+              </AlertTitle>
+              <AlertDescription className="text-red-800">
+                {submitStatus.message}
+              </AlertDescription>
+            </div>
+          </div>
         </Alert>
       )}
 
-      <Button type="submit" disabled={isSubmitting} className="w-full">
+      <Button 
+        type="submit" 
+        disabled={isSubmitting} 
+        className="w-full bg-primary hover:bg-primary/90 text-white"
+        size="lg"
+      >
         {isSubmitting ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Sending...
+            Sending Your Message...
           </>
         ) : (
           "Send Message"
         )}
       </Button>
+
+      <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+        <CheckCircle className="h-4 w-4 text-green-600" />
+        <p>We'll respond within 24 hours</p>
+      </div>
     </form>
   );
 } 

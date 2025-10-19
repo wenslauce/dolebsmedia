@@ -20,31 +20,34 @@ function TestimonialsSection() {
 
   const testimonials: Testimonial[] = [
     {
-      content: "Very professional from initial discussions through to commissioning of the system. The system has performed admirably and more than meets my requirements - even on cloudy days!",
-      author: "Philip Waterer"
+      content: "Dolebs Media captured our brand story perfectly. The photography was exceptional and the team was incredibly professional from start to finish. Highly recommended!",
+      author: "Philip Waterer",
+      company: "Tech Innovators Kenya"
     },
     {
-      content: "We had our W. Giertsen solar installation for almost two years now and have nothing but praise for the system; indeed we have recommended it to many friends. Paul and his team did a brilliant job, we never notice power cuts and have never had any issues.",
-      author: "Madeleine Wackernagel"
+      content: "We've worked with Dolebs Media for almost two years now and have nothing but praise for their creative work. The videos they produced have significantly boosted our social media engagement.",
+      author: "Madeleine Wackernagel",
+      company: "Multichoice Kenya"
     },
     {
-      content: "We have invested in your solar power generation on all our farms; 40 percent of our energy is from these solar panels and we're saving huge amounts on our energy bill every month.",
+      content: "Their graphic design work has completely transformed our brand identity. We've received countless compliments on our new marketing materials and website.",
       author: "Chris Kulei",
-      company: "Sian Farms"
+      company: "Azuri Technologies"
     },
     {
-      content: "The supercapacitor technology combined with solar panels has completely changed how we operate. Zero downtime, faster charging, and exceptional reliability.",
+      content: "The video production quality is outstanding. They understood our vision perfectly and delivered content that exceeded our expectations. True professionals!",
       author: "Robert Njeri",
-      company: "Green Solutions Kenya"
+      company: "Ministry of Education"
     },
     {
-      content: "After comparing multiple options, this solar solution was by far the best investment. ROI has been outstanding, and the maintenance team has been excellent.",
+      content: "After comparing multiple agencies, Dolebs Media was by far the best choice. Their photography and marketing expertise has been instrumental in growing our brand presence.",
       author: "Sarah Odhiambo",
-      company: "Nairobi Restaurant Group"
+      company: "ICDL Africa"
     },
     {
-      content: "The installation process was quick and professional. The system has been working flawlessly for over a year now, even during the rainy season.",
-      author: "Daniel Kimani"
+      content: "The team's creativity and attention to detail is impressive. From photography to web development, they delivered everything on time and beyond our expectations.",
+      author: "Daniel Kimani",
+      company: "Riara University"
     }
   ];
 
@@ -97,7 +100,7 @@ function TestimonialsSection() {
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-secondary mb-6">Customer Success Stories</h2>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
-            Don't just take our word for it. Here's what our satisfied customers have to say about their experience with our solar solutions.
+            Don't just take our word for it. Here's what our satisfied customers have to say about their experience with our creative services.
           </p>
           <div className="mt-6 h-1 w-20 bg-gradient-to-r from-primary to-accent-gold rounded-full mx-auto" />
         </motion.div>
@@ -150,27 +153,19 @@ function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Buttons */}
+        {/* CTA Button */}
         <motion.div 
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
+          className="flex items-center justify-center mt-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <Link
-            href="/testimonials"
-            className="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-primary/30 text-secondary hover:text-primary px-6 py-3 rounded-md font-medium transition-all duration-300 group shadow-sm hover:shadow-md"
-          >
-            More Testimonials
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </Link>
-          
-          <Link
-            href="/about-us/customer-references"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 group shadow-md hover:shadow-lg"
           >
-            Customer References
+            Get Started Today
             <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </motion.div>

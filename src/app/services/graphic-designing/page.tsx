@@ -5,6 +5,7 @@ import Link from "next/link";
 import dynamic from 'next/dynamic';
 import { motion } from "framer-motion";
 import { Palette, Users, Award, CheckCircle, Building, Globe, Star, ArrowRight, Brush } from "lucide-react";
+import { ServiceQuoteForm } from "@/components/service-quote-form";
 
 // Dynamically import Header and Footer to avoid SSR issues
 const Header = dynamic(() => import('@/components/Header'), { ssr: false });
@@ -105,7 +106,7 @@ export default function GraphicDesigningPage() {
                   transition={{ duration: 0.7, delay: 0.8 }}
                 >
                   <Link
-                    href="/contact"
+                    href="#get-quote"
                     className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md inline-flex items-center font-medium transition-all hover:shadow-lg hover:shadow-primary/20"
                   >
                     <span>Get Quote</span>
@@ -398,6 +399,15 @@ export default function GraphicDesigningPage() {
                   </div>
                 </div>
               </motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* Quote Form Section */}
+        <div className="bg-white py-20" id="get-quote">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12">
+              <ServiceQuoteForm serviceType="graphic-designing" serviceName="Graphic Designing" />
             </div>
           </div>
         </div>
