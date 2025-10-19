@@ -19,7 +19,6 @@ export function Footer() {
 
   const companyLinks = [
     { href: "/about-us", label: "About Us" },
-    { href: "/testimonials", label: "Testimonials" },
     { href: "/career", label: "Career" }
   ];
 
